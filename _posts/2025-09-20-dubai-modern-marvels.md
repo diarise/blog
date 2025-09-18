@@ -4,7 +4,7 @@ title: "Dubai: A Journey Through Modern Marvels"
 date: 2025-09-20
 categories: [Dubai, Middle East]
 tags: [UAE, Travel, Architecture, Luxury]
-image: /assets/images/dubai-skyline.jpg
+image: /assets/images/dubai-skyline.jpeg
 excerpt: "From the world’s tallest skyscraper to golden deserts, Dubai is a city where tradition meets futuristic innovation."
 ---
 
