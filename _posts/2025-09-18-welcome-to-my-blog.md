@@ -7,8 +7,3 @@ tags: [Cape Coast, Heritage, Travel]
 image: /assets/images/Elefant_Ghana.webp
 excerpt: "A journey into Ghana’s most historic site — Cape Coast Castle, a UNESCO World Heritage monument."
 ---
-Cape Coast Castle is one of the most visited historic sites in Ghana...
-
-![Inside Castle](/assets/images/Elefant_Ghana.webp)
-
-For more info, check out [Ghana Museums](https://ghanamuseums.org).
