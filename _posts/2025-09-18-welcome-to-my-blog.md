@@ -1,6 +1,10 @@
 ---
 layout: post
-title: "Welcome to the Blog"
-date: 2025-09-18
+title: "Exploring Cape Coast Castle"
+date: 2025-09-19
+categories: [Ghana, History]
+tags: [Cape Coast, Heritage, Travel]
+image: /assets/images/cape-coast.jpg
+excerpt: "A journey into Ghana’s most historic site — Cape Coast Castle, a UNESCO World Heritage monument."
 ---
-This is the first post on the Voyage By Luna blog!
+Cape Coast Castle is one of the most visited historic sites in Ghana...
