@@ -1,8 +1,8 @@
-/* Blog index */
+/* Blog Homepage */
 #blog h1 {
   font-size: 2.5rem;
-  font-weight: 700;
-  color: #003580; /* brand color */
+  font-weight: bold;
+  color: #003580;
 }
 
 #blog .card {
@@ -20,10 +20,10 @@
   font-weight: 600;
 }
 
-/* Single post */
+/* Single Post */
 #single-post h1 {
   font-size: 2.2rem;
-  font-weight: 700;
+  font-weight: bold;
   color: #003580;
 }
 
