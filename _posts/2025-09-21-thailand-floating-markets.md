@@ -4,7 +4,7 @@ title: "Thailand’s Floating Markets: A Feast on Water"
 date: 2025-09-21
 categories: [Thailand, Culture]
 tags: [Bangkok, Food, Travel]
-image: /assets/images/thailand-floating-market.jpg
+image: /assets/images/thailand-floating-market.webp
 excerpt: "Experience the colors, flavors, and sounds of Thailand’s floating markets — where boats brim with tropical fruits, spices, and smiles."
 ---
 
