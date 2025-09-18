@@ -5,7 +5,10 @@ title: "Blog"
 
 <section id="blog" class="py-5 bg-light">
   <div class="container">
-    <h1 class="text-center mb-5">Latest Stories</h1>
+    <div class="text-center mb-5">
+                <h2 class="text-uppercase font-weight-bold">LATEST STORIES</h2>
+                <p class="text-muted">Enjoy th reading!</p>
+            </div>
     <div class="row">
       {% for post in site.posts %}
         <div class="col-md-6 col-lg-4 mb-4">
