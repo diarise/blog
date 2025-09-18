@@ -1,6 +1,12 @@
 title: "Voyage By Luna Blog"
 description: "Travel stories, tips, and updates"
+
 theme: minima
+
+minima:
+  skin: classic
+  custom_css:
+    - /assets/css/custom.css
 
 future: true
 
