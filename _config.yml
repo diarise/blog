@@ -2,6 +2,8 @@ title: "Voyage By Luna Blog"
 description: "Travel stories, tips, and updates"
 theme: minima
 
+future: true
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
