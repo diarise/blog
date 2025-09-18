@@ -1,32 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} | {{ site.title }}</title>
 
-    <title>{{ page.title }} | {{ site.title }}</title>
-    {{ site.seo }}
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://voyagebyluna.com/styles.css"> <!-- your main website styles -->
+  <link rel="stylesheet" href="{{ "/assets/css/blog.css" | relative_url }}">
+</head>
+<body>
 
-    <!-- Minima core CSS -->
-    <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  <!-- Navbar copied from main site -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark" id="mainHeader">
+      <a class="navbar-brand" href="https://voyagebyluna.com">
+        <img src="/images/logo.png" alt="Logo Voyage By Luna">
+        Voyage By Luna
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="https://voyagebyluna.com#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://voyagebyluna.com#top-destinations">Destinations</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://voyagebyluna.com#packages">Packages</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://voyagebyluna.com#about">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://voyagebyluna.com#career">Career</a></li>
+          <li class="nav-item active"><a class="nav-link" href="{{ "/" | relative_url }}">Blog</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-    <!-- ✅ Our custom CSS -->
-    <link rel="stylesheet" href="{{ "/assets/css/custom.css" | relative_url }}">
-    <link rel="stylesheet" href="https://voyagebyluna.com/styles.css">
-  </head>
-  <body>
-    <header>
-      <h1><a href="{{ "/" | relative_url }}">{{ site.title }}</a></h1>
-      <p>{{ site.description }}</p>
-    </header>
+  <main role="main">
+    {{ content }}
+  </main>
 
-    <main>
-      {{ content }}
-    </main>
+  <!-- Footer copied from main site -->
+  <footer class="bg-light text-light py-4">
+    <div class="container text-center">
+      <img src="/images/logo.png" alt="Logo Voyage By Luna" style="max-width: 120px;" class="mb-3">
+      <p>Email: soukeyna@voyagebyluna.com | Phone: +1 (424) 279 0200</p>
+      <p>&copy; {{ site.time | date: "%Y" }} Voyage By Luna. All rights reserved.</p>
+    </div>
+  </footer>
 
-    <footer>
-      <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}</p>
-    </footer>
-  </body>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
