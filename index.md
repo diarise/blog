@@ -5,15 +5,21 @@ title: "Blog"
 
 <h1>Latest Posts</h1>
 
-<ul class="posts">
+<div class="posts-list">
   {% for post in site.posts %}
-    <li>
-      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    <article class="post-card">
       {% if post.image %}
-        <img src="{{ post.image }}" alt="{{ post.title }}" style="max-width:300px;">
+        <a href="{{ post.url }}">
+          <img class="post-thumb" src="{{ post.image | relative_url }}" alt="{{ post.title }}">
+        </a>
       {% endif %}
-      <p>{{ post.excerpt }}</p>
-      <a href="{{ post.url }}">Read more →</a>
-    </li>
+      
+      <div class="post-info">
+        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        <p class="post-meta">{{ post.date | date: "%B %d, %Y" }}</p>
+        <p>{{ post.excerpt }}</p>
+        <a class="read-more" href="{{ post.url }}">Read more →</a>
+      </div>
+    </article>
   {% endfor %}
-</ul>
+</div>
