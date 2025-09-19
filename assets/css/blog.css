@@ -45,3 +45,41 @@ footer .list-inline-item a {
 footer .list-inline-item a:hover {
   color: #FF6C00;
 }
+
+
+/* Featured Post */
+#blog .row.mb-5 h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #003580;
+}
+
+#blog .row.mb-5 img {
+  border-radius: 10px;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+/* Section headers */
+#blog h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #003580;
+  margin-top: 2rem;
+}
+
+/* Smaller cards below */
+#blog .card {
+  border: none;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+#blog .card:hover {
+  transform: translateY(-5px);
+}
+
+#blog .card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
