@@ -5,7 +5,7 @@ title: "Blog"
 
 <section id="blog" class="py-5 bg-light">
   <div class="container">
-    <div class="text-center mb-5">
+    <div class="text-center mb-5" style="margin-top: 3rem!important;">
                 <h2 class="text-uppercase font-weight-bold">LATEST STORIES</h2>
                 <p class="text-muted">Enjoy th reading!</p>
             </div>
