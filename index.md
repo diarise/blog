@@ -8,7 +8,7 @@ title: "Blog"
 
     <!-- Featured Post -->
     {% assign featured = site.posts.first %}
-    <div class="row mb-5 align-items-center">
+    <div class="row mb-5 align-items-center" style="margin-top: 4rem!important;">
       <div class="col-md-6">
         {% if featured.image %}
           <a href="{{ featured.url }}">
@@ -26,8 +26,8 @@ title: "Blog"
 
     <!-- Remaining Posts -->
     <div class="text-center mb-5" style="margin-top: 3rem!important;">
-                <h3 class="text-uppercase font-weight-bold">LATEST STORIES</h3>
-                <p class="text-muted">Enjoy th reading!</p>
+                <h3 class="text-uppercase font-weight-bold">More Stories</h3>
+                
             </div>
     <div class="row">
       {% for post in site.posts offset:1 %}
