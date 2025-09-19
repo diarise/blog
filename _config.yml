@@ -15,7 +15,6 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
-
 # site-wide (add if missing)
 url: "https://blog.voyagebyluna.com"   # use your blog domain or https://voyagebyluna.com if you prefer
 baseurl: ""                            # keep blank if published at root of domain
