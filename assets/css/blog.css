@@ -145,3 +145,73 @@ footer .list-inline-item a:hover {
 
 /* related posts (if not already present) */
 .related-posts .related-card { border: none; border-radius: 10px; }
+
+
+/* Newsletter Box */
+.newsletter-box {
+  background: #f9f9f9;
+  border: 1px solid #eaeaea;
+  border-radius: 12px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.newsletter-box h4 {
+  color: #003580;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.newsletter-box input[type="email"] {
+  max-width: 380px;
+  margin: 0 auto;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.newsletter-box button {
+  background-color: #FF6C00;
+  border-color: #FF6C00;
+  border-radius: 8px;
+  padding: 0.5rem 1.5rem;
+}
+
+.newsletter-box button:hover {
+  background-color: #e85e00;
+  border-color: #e85e00;
+}
+
+/* CTA Box */
+.cta-box {
+  background: linear-gradient(135deg, rgba(255,108,0,0.08), rgba(0,53,128,0.06));
+  border-radius: 12px;
+  max-width: 700px;
+  margin: 2rem auto;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+}
+
+.cta-box h4 {
+  color: #003580;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.cta-box p {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.cta-box .btn-primary {
+  background-color: #FF6C00;
+  border-color: #FF6C00;
+  border-radius: 8px;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+}
+
+.cta-box .btn-primary:hover {
+  background-color: #e85e00;
+  border-color: #e85e00;
+}
