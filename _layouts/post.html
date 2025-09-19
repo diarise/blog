@@ -31,8 +31,17 @@ layout: default
             <h3 class="mb-4">You Might Also Like</h3>
 
             <div class="row">
-              {% assign others = site.posts | where_exp: "p", "p.url != page.url" %}
-              {% for p in others limit:2 %}
+              {% comment %}
+  Prefer posts that share the first category (if exists). Fallback to latest posts excluding current.
+{% endcomment %}
+{% assign related = "" %}
+{% if page.categories and page.categories.size > 0 %}
+  {% assign related = site.posts | where_exp: "p", "p.url != page.url and p.categories contains page.categories[0]" %}
+{% endif %}
+{% if related == "" or related == empty %}
+  {% assign related = site.posts | where_exp: "p", "p.url != page.url" %}
+{% endif %}
+{% for p in related limit:2 %}
                 <div class="col-md-6 mb-4">
                   <div class="card h-100 shadow-sm related-card">
                     {% if p.image %}
