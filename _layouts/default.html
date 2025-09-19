@@ -40,13 +40,36 @@
   </main>
 
   <!-- Footer copied from main site -->
-  <footer class="bg-light text-light py-4">
-    <div class="container text-center">
-      <img src="/images/logo.png" alt="Logo Voyage By Luna" style="max-width: 120px;" class="mb-3">
-      <p>Email: soukeyna@voyagebyluna.com | Phone: +1 (424) 279 0200</p>
-      <p>&copy; {{ site.time | date: "%Y" }} Voyage By Luna. All rights reserved.</p>
-    </div>
-  </footer>
+
+<footer class="bg-light text-light py-4">
+    <div class="container">
+        <div class="row">
+            <!-- Logo Section -->
+            <div class="col-md-4 text-center mb-4">
+                <img src="images/logo.png" alt="Logo Voyage By Luna" class="img-fluid" style="max-width: 150px;">
+            </div>
+
+            <!-- Contact and Social Media Section -->
+            <div class="col-md-4 text-center">
+                
+                        <h5 class="text-uppercase">Contact Us</h5>
+                        <p>Email: soukeyna@voyagebyluna.com <br> Phone: +1 (424) 279 0200</p>
+                        <p>&copy; {{ site.time | date: "%Y" }} Voyage By Luna. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="text-uppercase">Follow Us</h5>
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a href="https://www.facebook.com/VoyageByLuna" target="_blank"><i class="fab fa-facebook fa-2x"></i></a></li>
+                            <li class="list-inline-item"><a href="https://twitter.com/voyagebyluna" target="_blank"><i class="fab fa-twitter fa-2x"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.instagram.com/voyagebyluna/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.linkedin.com/company/voyage-by-luna/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.pinterest.com/VoyageByLuna/" target="_blank"><i class="fab fa-pinterest fa-2x"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    
+</footer>
 
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
