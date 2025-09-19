@@ -13,53 +13,42 @@ layout: default
           </div>
 
           {% if page.gallery %}
-  <div id="postGallery" class="carousel slide mb-4" data-ride="carousel">
-    <div class="carousel-inner">
-      {% for img in page.gallery %}
-        <div class="carousel-item {% if forloop.first %}active{% endif %}">
-          <img src="{{ img | relative_url }}" class="d-block w-100 rounded shadow-sm" alt="{{ page.title }} - {{ forloop.index }}">
-        </div>
-      {% endfor %}
-    </div>
-    <a class="carousel-control-prev" href="#postGallery" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#postGallery" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-{% elsif page.image %}
-  <img src="{{ page.image | relative_url }}" class="img-fluid rounded shadow-sm mb-4" alt="{{ page.title }}">
-{% endif %}
+            <div id="postGallery" class="carousel slide mb-4" data-ride="carousel">
+              <div class="carousel-inner">
+                {% for img in page.gallery %}
+                  <div class="carousel-item {% if forloop.first %}active{% endif %}">
+                    <img src="{{ img | relative_url }}" class="d-block w-100 rounded shadow-sm" alt="{{ page.title }} - {{ forloop.index }}">
+                  </div>
+                {% endfor %}
+              </div>
+              <a class="carousel-control-prev" href="#postGallery" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#postGallery" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          {% elsif page.image %}
+            <img src="{{ page.image | relative_url }}" class="img-fluid rounded shadow-sm mb-4" alt="{{ page.title }}">
+          {% endif %}
 
           <div class="post-content mb-5">
             {{ content }}
           </div>
 
-          <!-- add social share here -->
+          <!-- Social + Author -->
           {% include share.html %}
           {% include author.html %}
 
           <!-- 🔥 Related Posts Section -->
           <hr>
-
           <div class="related-posts mb-4">
             <h3 class="mb-4">You Might Also Like</h3>
-
             <div class="row">
-              {% comment %}
-  Prefer posts that share the first category (if exists). Fallback to latest posts excluding current.
-{% endcomment %}
-{% assign related = "" %}
-{% if page.categories and page.categories.size > 0 %}
-  {% assign related = site.posts | where_exp: "p", "p.url != page.url and p.categories contains page.categories[0]" %}
-{% endif %}
-{% if related == "" or related == empty %}
-  {% assign related = site.posts | where_exp: "p", "p.url != page.url" %}
-{% endif %}
-{% for p in related limit:2 %}
+              {% assign related = site.posts | where_exp: "p", "p.url != page.url" %}
+              {% for p in related limit:2 %}
                 <div class="col-md-6 mb-4">
                   <div class="card h-100 shadow-sm related-card">
                     {% if p.image %}
@@ -78,15 +67,15 @@ layout: default
                 </div>
               {% endfor %}
             </div>
-
             <div class="text-center mt-3">
               <a href="{{ "/" | relative_url }}" class="btn btn-primary">
                 ← Back to Blog
               </a>
             </div>
           </div>
+
           {% include newsletter.html %}
-{% include cta.html %}
+          {% include cta.html %}
           <!-- 🔥 End Related Posts Section -->
 
         </article>
