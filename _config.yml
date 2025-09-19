@@ -26,3 +26,8 @@ author:
   bio: "Founder of Voyage By Luna — helping families & explorers discover unforgettable destinations."
 
 twitter_username: "voyagebyluna"   # optional, for share cards
+
+gallery:
+  - /assets/images/g1.jpg
+  - /assets/images/g2.jpg
+  - /assets/images/g3.jpg
