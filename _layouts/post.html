@@ -12,9 +12,27 @@ layout: default
             <p class="text-muted">{{ page.date | date: "%B %d, %Y" }}</p>
           </div>
 
-          {% if page.image %}
-            <img src="{{ page.image | relative_url }}" class="img-fluid rounded shadow-sm mb-4" alt="{{ page.title }}">
-          {% endif %}
+          {% if page.gallery %}
+  <div id="postGallery" class="carousel slide mb-4" data-ride="carousel">
+    <div class="carousel-inner">
+      {% for img in page.gallery %}
+        <div class="carousel-item {% if forloop.first %}active{% endif %}">
+          <img src="{{ img | relative_url }}" class="d-block w-100 rounded shadow-sm" alt="{{ page.title }} - {{ forloop.index }}">
+        </div>
+      {% endfor %}
+    </div>
+    <a class="carousel-control-prev" href="#postGallery" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#postGallery" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+{% elsif page.image %}
+  <img src="{{ page.image | relative_url }}" class="img-fluid rounded shadow-sm mb-4" alt="{{ page.title }}">
+{% endif %}
 
           <div class="post-content mb-5">
             {{ content }}
