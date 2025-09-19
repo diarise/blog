@@ -50,8 +50,8 @@ footer .list-inline-item a:hover {
 /* Featured Post */
 #blog .row.mb-5 h2 {
   font-size: 2rem;
-  font-weight: bold;
-  color: #003580;
+/*   font-weight: bold;
+  color: #003580; */
 }
 
 #blog .row.mb-5 img {
