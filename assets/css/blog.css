@@ -83,3 +83,45 @@ footer .list-inline-item a:hover {
   font-size: 1.2rem;
   font-weight: 600;
 }
+.related-posts h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #003580;
+}
+
+.related-posts .related-card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.related-posts .related-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.08);
+}
+
+.related-posts .card-img-top {
+  height: 180px;
+  object-fit: cover;
+}
+
+.related-posts .card-body {
+  padding: 1rem;
+}
+
+.related-posts .card-title {
+  font-size: 1.05rem;
+  margin-bottom: .5rem;
+}
+
+.related-posts .card-text {
+  color: #555;
+  font-size: 0.95rem;
+  margin-bottom: .75rem;
+}
+
+.related-posts .btn-primary {
+  background-color: #FF6C00;
+  border-color: #FF6C00;
+}
