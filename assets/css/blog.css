@@ -215,3 +215,20 @@ footer .list-inline-item a:hover {
   background-color: #e85e00;
   border-color: #e85e00;
 }
+
+
+.product-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+  height: 220px;
+  object-fit: cover;
+}
