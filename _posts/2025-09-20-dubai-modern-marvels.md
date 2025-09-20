@@ -15,3 +15,10 @@ Yet, beyond the glamour lies tradition. In the historic district of **Al Fahidi*
 For adventure seekers, a desert safari just outside the city offers sand dunes, camel rides, and breathtaking sunsets.  
 
 Dubai is more than a stopover — it’s a city that blends luxury, culture, and innovation in a way few places can.  
+
+
+{% include product-card.html 
+   title="Samsonite Tectonic Crossbody Bag" 
+   image="https://m.media-amazon.com/images/I/71qvCjJfB1L._AC_SL1500_.jpg" 
+   link="https://www.amazon.com/dp/B0BGWQGVBK?tag=soukeynatraor-20" 
+   description="Compact, durable travel bag perfect for daily adventures." %}
