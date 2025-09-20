@@ -49,6 +49,23 @@ title: "Blog"
         </div>
       {% endfor %}
     </div>
-
+<hr>
+<h2 class="mb-4">Featured Travel Gear</h2>
+<div class="row">
+  <div class="col-md-4">
+    {% include product-card.html 
+       title="Samsonite Tectonic Crossbody Bag" 
+       image="https://m.media-amazon.com/images/I/71qvCjJfB1L._AC_SL1500_.jpg" 
+       link="https://www.amazon.com/dp/B0BGWQGVBK?tag=soukeynatraor-20" 
+       description="Compact, durable travel bag perfect for daily adventures." %}
+  </div>
+  <div class="col-md-4">
+    {% include product-card.html 
+       title="Travel Backpack" 
+       image="https://via.placeholder.com/300x300.png?text=Backpack" 
+       link="https://www.amazon.com/dp/REPLACE" 
+       description="Lightweight backpack for global travelers." %}
+  </div>
+</div>
   </div>
 </section>
