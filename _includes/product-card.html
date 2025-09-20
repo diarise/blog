@@ -1,0 +1,14 @@
+<div class="card shadow-sm mb-4 h-100 product-card">
+  <a href="{{ include.link }}" target="_blank" rel="nofollow noopener sponsored">
+    <img src="{{ include.image }}" class="card-img-top" alt="{{ include.title }}">
+  </a>
+  <div class="card-body text-center">
+    <h5 class="card-title">{{ include.title }}</h5>
+    {% if include.description %}
+      <p class="card-text text-muted">{{ include.description }}</p>
+    {% endif %}
+    <a href="{{ include.link }}" target="_blank" rel="nofollow noopener sponsored" class="btn btn-primary">
+      Buy on Amazon
+    </a>
+  </div>
+</div>
