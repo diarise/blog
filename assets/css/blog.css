@@ -394,3 +394,17 @@ footer .list-inline-item a:hover {
     margin-bottom: 1.5rem;
   }
 }
+/* Featured Post Mobile Fix */
+@media (max-width: 767px) {
+  #blog .row.mb-5 .col-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  #blog .row.mb-5 img {
+    max-height: 280px;
+    object-fit: cover;
+  }
+}
