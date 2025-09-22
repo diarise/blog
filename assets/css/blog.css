@@ -357,3 +357,16 @@ footer .list-inline-item a:hover {
     padding: 1.5rem;
   }
 }
+/* ===================== */
+/* Responsive Product Grid */
+/* ===================== */
+@media (max-width: 767px) {
+  .product-card {
+    margin-bottom: 1.5rem;
+  }
+  .related-products .col-md-6,
+  .cta-box .col-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
