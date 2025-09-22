@@ -78,7 +78,6 @@ layout: default
           {% include cta.html %}
           <!-- 🔥 End Related Posts Section -->
 <!-- 🔥 Related Products Section -->
-<hr>
 <!-- 🔥 Travel Store Section -->
 <div class="cta-box text-center my-5 p-5 rounded shadow-sm" 
      style="background: linear-gradient(135deg, rgba(255,108,0,0.08), rgba(0,53,128,0.06));">
@@ -86,10 +85,10 @@ layout: default
   <h3 class="mb-3 font-weight-bold">Travel Essentials Store</h3>
   <p class="mb-5">Explore our curated Amazon storefront for gear, books, and accessories — handpicked to make your journeys easier and more enjoyable.</p>
 
-  <!-- Product Grid -->
+  <!-- Product Grid (2 per row) -->
   <div class="row">
-    {% for product in site.data.products limit:3 %}
-      <div class="col-md-4 col-sm-6 mb-4">
+    {% for product in site.data.products limit:4 %}
+      <div class="col-md-6 mb-4">
         {% include product-card.html 
           title=product.title 
           image=product.image 
