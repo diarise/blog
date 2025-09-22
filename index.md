@@ -51,7 +51,7 @@ title: "Blog"
     </div>
 <!-- 🔥 Travel Store Section -->
 <div class="cta-box text-center my-5 p-5 rounded shadow-sm" 
-     style="background: linear-gradient(135deg, rgba(255,108,0,0.08), rgba(0,53,128,0.06));">
+     style="background: linear-gradient(135deg, rgba(255,108,0,0.08), rgba(0,53,128,0.06)); max-width: unset;">
 
   <h3 class="mb-3 font-weight-bold">Travel Essentials Store</h3>
   <p class="mb-5">Explore our curated Amazon storefront for gear, books, and accessories — handpicked to make your journeys easier and more enjoyable.</p>
