@@ -370,3 +370,27 @@ footer .list-inline-item a:hover {
     max-width: 100%;
   }
 }
+/* ===================== */
+/* Responsive Layout Fixes */
+/* ===================== */
+@media (max-width: 767px) {
+  /* Blog post cards */
+  #blog .col-md-6,
+  #blog .col-lg-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  /* Amazon product cards */
+  .related-products .col-md-6,
+  .cta-box .col-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  /* Add some spacing */
+  .product-card,
+  #blog .card {
+    margin-bottom: 1.5rem;
+  }
+}
