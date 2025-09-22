@@ -49,23 +49,31 @@ title: "Blog"
         </div>
       {% endfor %}
     </div>
-<hr>
-<h2 class="mb-4">Featured Travel Gear</h2>
-<div class="row">
-  <div class="col-md-4">
-    {% include product-card.html 
-       title="Samsonite Tectonic Crossbody Bag" 
-       image="https://m.media-amazon.com/images/I/71qvCjJfB1L._AC_SL1500_.jpg" 
-       link="https://www.amazon.com/dp/B0BGWQGVBK?tag=soukeynatraor-20" 
-       description="Compact, durable travel bag perfect for daily adventures." %}
+<!-- 🔥 Travel Store Section -->
+<div class="cta-box text-center my-5 p-5 rounded shadow-sm" 
+     style="background: linear-gradient(135deg, rgba(255,108,0,0.08), rgba(0,53,128,0.06));">
+
+  <h3 class="mb-3 font-weight-bold">Travel Essentials Store</h3>
+  <p class="mb-5">Explore our curated Amazon storefront for gear, books, and accessories — handpicked to make your journeys easier and more enjoyable.</p>
+
+  <div class="row">
+    {% for product in site.data.products limit:4 %}
+      <div class="col-md-6 mb-4">
+        {% include product-card.html 
+          title=product.title 
+          image=product.image 
+          link=product.link 
+          description=product.description %}
+      </div>
+    {% endfor %}
   </div>
-  <div class="col-md-4">
-    {% include product-card.html 
-       title="Travel Backpack" 
-       image="https://via.placeholder.com/300x300.png?text=Backpack" 
-       link="https://www.amazon.com/dp/REPLACE" 
-       description="Lightweight backpack for global travelers." %}
+
+  <div class="text-center mt-4">
+    <a href="https://www.amazon.com/shop/voyagebyluna" target="_blank" rel="nofollow noopener sponsored" class="btn btn-lg btn-primary">
+      Visit Full Amazon Store →
+    </a>
   </div>
 </div>
+<!-- 🔥 End Travel Store Section -->
   </div>
 </section>
