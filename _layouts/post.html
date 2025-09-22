@@ -78,10 +78,15 @@ layout: default
           {% include cta.html %}
           <!-- 🔥 End Related Posts Section -->
 <!-- 🔥 Related Products Section -->
-<!-- 🔥 Related Products Section -->
 <hr>
-<div class="related-products my-5">
-  <h3 class="mb-4">Recommended Travel Gear</h3>
+<!-- 🔥 Travel Store Section -->
+<div class="cta-box text-center my-5 p-5 rounded shadow-sm" 
+     style="background: linear-gradient(135deg, rgba(255,108,0,0.08), rgba(0,53,128,0.06));">
+
+  <h3 class="mb-3 font-weight-bold">Travel Essentials Store</h3>
+  <p class="mb-5">Explore our curated Amazon storefront for gear, books, and accessories — handpicked to make your journeys easier and more enjoyable.</p>
+
+  <!-- Product Grid -->
   <div class="row">
     {% for product in site.data.products limit:3 %}
       <div class="col-md-4 col-sm-6 mb-4">
@@ -94,13 +99,14 @@ layout: default
     {% endfor %}
   </div>
 
+  <!-- CTA Button -->
   <div class="text-center mt-4">
-    <a href="https://www.amazon.com/shop/voyagebyluna" target="_blank" rel="nofollow noopener sponsored" class="btn btn-lg btn-outline-primary">
-      View Full Amazon Store →
+    <a href="https://www.amazon.com/shop/voyagebyluna" target="_blank" rel="nofollow noopener sponsored" class="btn btn-lg btn-primary">
+      Visit Full Amazon Store →
     </a>
   </div>
 </div>
-<!-- 🔥 End Related Products Section -->
+<!-- 🔥 End Travel Store Section -->
         </article>
       </div>
     </div>
