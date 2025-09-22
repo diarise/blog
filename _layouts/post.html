@@ -78,41 +78,20 @@ layout: default
           {% include cta.html %}
           <!-- 🔥 End Related Posts Section -->
 <!-- 🔥 Related Products Section -->
+<!-- 🔥 Related Products Section -->
 <hr>
 <div class="related-products my-5">
   <h3 class="mb-4">Recommended Travel Gear</h3>
   <div class="row">
-    <div class="col-md-3 col-sm-6 mb-4">
-      {% include product-card.html 
-         title="Samsonite Tectonic Crossbody Bag" 
-         image="https://m.media-amazon.com/images/I/81I6bSy6DdL._AC_SX679_.jpg" 
-         link="https://www.amazon.com/dp/B0BGWQGVBK?tag=soukeynatraor-20" 
-         description="Compact, durable travel bag perfect for daily adventures." %}
-    </div>
-
-    <div class="col-md-3 col-sm-6 mb-4">
-      {% include product-card.html 
-         title="Portable Luggage Scale" 
-         image="https://m.media-amazon.com/images/I/71O-vl9Xr5L._AC_SL1500_.jpg" 
-         link="https://www.amazon.com/dp/B00NW62PCA?tag=soukeynatraor-20" 
-         description="Avoid overweight baggage fees with this digital luggage scale." %}
-    </div>
-
-    <div class="col-md-3 col-sm-6 mb-4">
-      {% include product-card.html 
-         title="Travel Neck Pillow" 
-         image="https://m.media-amazon.com/images/I/81jvXvU8SIL._AC_SL1500_.jpg" 
-         link="https://www.amazon.com/dp/B01JPJQWQO?tag=soukeynatraor-20" 
-         description="Memory foam pillow for long flights and comfort." %}
-    </div>
-
-    <div class="col-md-3 col-sm-6 mb-4">
-      {% include product-card.html 
-         title="Universal Travel Adapter" 
-         image="https://m.media-amazon.com/images/I/71FWyZ6WZkL._AC_SL1500_.jpg" 
-         link="https://www.amazon.com/dp/B01N6S068R?tag=soukeynatraor-20" 
-         description="Stay charged anywhere with this universal adapter." %}
-    </div>
+    {% for product in site.data.products limit:3 %}
+      <div class="col-md-4 col-sm-6 mb-4">
+        {% include product-card.html 
+          title=product.title 
+          image=product.image 
+          link=product.link 
+          description=product.description %}
+      </div>
+    {% endfor %}
   </div>
 
   <div class="text-center mt-4">
