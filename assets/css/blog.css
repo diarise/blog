@@ -231,16 +231,16 @@ footer .list-inline-item a:hover {
 
 .product-card img {
   width: 100%;
-  aspect-ratio: 1 / 1;   /* ✅ Keeps images square, no distortion */
-  object-fit: contain;   /* ✅ Ensures whole product image shows without cropping */
-  background: #fff;      /* White background behind product images */
+  aspect-ratio: 1 / 1;   /* ✅ Keeps consistent square display */
+  object-fit: contain;   /* ✅ No distortion */
+  background: #fff;
   padding: 10px;
 }
 
 .product-card h5 {
   font-size: 1rem;
-  margin-top: 0.5rem;
   font-weight: 600;
+  margin-top: 0.5rem;
 }
 
 .product-card .btn {
