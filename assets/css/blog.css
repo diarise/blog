@@ -253,8 +253,8 @@ footer .list-inline-item a:hover {
 
 .product-card img {
   width: 100%;
-  aspect-ratio: 1 / 1;   /* ✅ Keeps consistent square display */
-  object-fit: contain;   /* ✅ No distortion */
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
   background: #fff;
   padding: 10px;
 }
@@ -277,7 +277,7 @@ footer .list-inline-item a:hover {
   border-color: #e85e00;
 }
 
-/* Blog Post Card Styling (match product cards) */
+/* Blog Post Card Styling */
 .blog-card {
   transition: transform 0.25s ease, box-shadow 0.25s ease;
   border-radius: 12px;
@@ -291,8 +291,8 @@ footer .list-inline-item a:hover {
 
 .blog-card img {
   width: 100%;
-  aspect-ratio: 16 / 9;   /* ✅ widescreen ratio */
-  object-fit: cover;      /* ✅ prevents distortion */
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
 }
 
 .blog-card h5 {
@@ -309,4 +309,51 @@ footer .list-inline-item a:hover {
 .blog-card .btn {
   border-radius: 8px;
   padding: 0.4rem 1rem;
+}
+
+/* ===================== */
+/* Responsive Adjustments */
+/* ===================== */
+@media (max-width: 992px) {
+  #blog h1 {
+    font-size: 2rem;
+  }
+  #blog h3 {
+    font-size: 1.5rem;
+  }
+  .blog-card h5 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #blog .row.mb-5 {
+    flex-direction: column;
+  }
+  #blog .row.mb-5 img {
+    margin-bottom: 1rem;
+    max-height: 300px;
+  }
+  #blog .row.mb-5 h2 {
+    font-size: 1.5rem;
+  }
+  .blog-card img,
+  .product-card img {
+    aspect-ratio: auto;   /* ✅ allow taller images on mobile */
+  }
+}
+
+@media (max-width: 576px) {
+  #blog h1 {
+    font-size: 1.75rem;
+  }
+  .blog-card h5 {
+    font-size: 0.95rem;
+  }
+  .blog-card .card-text {
+    font-size: 0.9rem;
+  }
+  .cta-box {
+    padding: 1.5rem;
+  }
 }
