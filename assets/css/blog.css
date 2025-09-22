@@ -217,6 +217,7 @@ footer .list-inline-item a:hover {
 }
 
 
+/* Product Card Styling */
 .product-card {
   transition: transform 0.25s ease, box-shadow 0.25s ease;
   border-radius: 12px;
@@ -225,10 +226,31 @@ footer .list-inline-item a:hover {
 
 .product-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
 }
 
 .product-card img {
-  height: 220px;
-  object-fit: cover;
+  width: 100%;
+  aspect-ratio: 1 / 1;   /* ✅ Keeps images square, no distortion */
+  object-fit: contain;   /* ✅ Ensures whole product image shows without cropping */
+  background: #fff;      /* White background behind product images */
+  padding: 10px;
+}
+
+.product-card h5 {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  font-weight: 600;
+}
+
+.product-card .btn {
+  background-color: #FF6C00;
+  border-color: #FF6C00;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+}
+
+.product-card .btn:hover {
+  background-color: #e85e00;
+  border-color: #e85e00;
 }
