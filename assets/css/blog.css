@@ -37,6 +37,7 @@
   border-radius: 10px;
   margin-bottom: 1.5rem;
 }
+
 footer .list-inline-item a {
   color: #003580;
   transition: color 0.3s ease;
@@ -46,25 +47,23 @@ footer .list-inline-item a:hover {
   color: #FF6C00;
 }
 
-
 /* Featured Post */
 #blog .row.mb-5 h2 {
   font-size: 2rem;
-/*   font-weight: bold;
-  color: #003580; */
 }
 
 #blog .row.mb-5 img {
   border-radius: 10px;
+  width: 100%;
+  aspect-ratio: 16 / 9;   /* ✅ consistent widescreen ratio */
+  object-fit: cover;      /* ✅ prevents distortion */
   max-height: 400px;
-  object-fit: cover;
 }
 
 /* Section headers */
 #blog h3 {
   font-size: 1.75rem;
   font-weight: 700;
-/*   color: #003580; */
   margin-top: 2rem;
 }
 
@@ -83,6 +82,8 @@ footer .list-inline-item a:hover {
   font-size: 1.2rem;
   font-weight: 600;
 }
+
+/* Related posts */
 .related-posts h3 {
   font-size: 1.6rem;
   font-weight: 700;
@@ -127,25 +128,47 @@ footer .list-inline-item a:hover {
 }
 
 /* share buttons */
-.share-buttons a { color: #003580; margin-right: 10px; }
-.share-buttons a:hover { color: #FF6C00; }
+.share-buttons a { 
+  color: #003580; 
+  margin-right: 10px; 
+}
+.share-buttons a:hover { 
+  color: #FF6C00; 
+}
 
 /* author box */
-.author-box img { border: 3px solid rgba(0,0,0,0.05); }
-.author-box h5 { margin: 0; font-weight: 700; }
+.author-box img { 
+  border: 3px solid rgba(0,0,0,0.05); 
+}
+.author-box h5 { 
+  margin: 0; 
+  font-weight: 700; 
+}
 
 /* newsletter */
-.newsletter-box input { max-width: 380px; margin: 0 auto; display: block; }
+.newsletter-box input { 
+  max-width: 380px; 
+  margin: 0 auto; 
+  display: block; 
+}
 
 /* CTA */
-.cta-box .btn-primary { background-color: #FF6C00; border-color: #FF6C00; }
+.cta-box .btn-primary { 
+  background-color: #FF6C00; 
+  border-color: #FF6C00; 
+}
 
 /* carousel */
-#postGallery .carousel-item img { max-height: 500px; object-fit: cover; }
+#postGallery .carousel-item img { 
+  max-height: 500px; 
+  object-fit: cover; 
+}
 
 /* related posts (if not already present) */
-.related-posts .related-card { border: none; border-radius: 10px; }
-
+.related-posts .related-card { 
+  border: none; 
+  border-radius: 10px; 
+}
 
 /* Newsletter Box */
 .newsletter-box {
@@ -216,7 +239,6 @@ footer .list-inline-item a:hover {
   border-color: #e85e00;
 }
 
-
 /* Product Card Styling */
 .product-card {
   transition: transform 0.25s ease, box-shadow 0.25s ease;
@@ -253,4 +275,38 @@ footer .list-inline-item a:hover {
 .product-card .btn:hover {
   background-color: #e85e00;
   border-color: #e85e00;
+}
+
+/* Blog Post Card Styling (match product cards) */
+.blog-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+
+.blog-card img {
+  width: 100%;
+  aspect-ratio: 16 / 9;   /* ✅ widescreen ratio */
+  object-fit: cover;      /* ✅ prevents distortion */
+}
+
+.blog-card h5 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.blog-card .card-text {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.blog-card .btn {
+  border-radius: 8px;
+  padding: 0.4rem 1rem;
 }
