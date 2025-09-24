@@ -62,7 +62,7 @@ title: "Blog"
       <p class="mb-5">Explore our curated Amazon storefront for gear, books, and accessories — handpicked to make your journeys easier and more enjoyable.</p>
 
       <div class="row">
-        {% for product in site.data.products limit:4 %}
+        {% for product in site.data.products.products limit:4 %}
           <div class="col-md-6 mb-4">
             {% include product-card.html 
               title=product.title 
