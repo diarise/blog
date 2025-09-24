@@ -1,0 +1,38 @@
+backend:
+  name: github
+  repo: diarise/blog   # ⬅️ replace with your GitHub user/repo name
+  branch: main         # or master if your repo uses that
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
+
+media_folder: "assets/images/uploads"
+public_folder: "/assets/images/uploads"
+
+collections:
+  - name: "posts"
+    label: "Blog Posts"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Categories", name: "categories", widget: "list"}
+      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Featured image", name: "image", widget: "image"}
+      - {label: "Excerpt", name: "excerpt", widget: "text"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "products"
+    label: "Travel Store Products"
+    file: "_data/products.yml"
+    fields:
+      - label: "Products"
+        name: "products"
+        widget: "list"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Image", name: "image", widget: "image"}
+          - {label: "Link", name: "link", widget: "string"}
+          - {label: "Description", name: "description", widget: "text"}
