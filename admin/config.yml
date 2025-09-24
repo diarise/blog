@@ -26,13 +26,16 @@ collections:
 
   - name: "products"
     label: "Travel Store Products"
-    file: "_data/products.yml"
-    fields:
-      - label: "Products"
+    files:
+      - label: "Products List"
         name: "products"
-        widget: "list"
+        file: "_data/products.yml"
         fields:
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Image", name: "image", widget: "image"}
-          - {label: "Link", name: "link", widget: "string"}
-          - {label: "Description", name: "description", widget: "text"}
+          - label: "Products"
+            name: "products"
+            widget: "list"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Image", name: "image", widget: "image"}
+              - {label: "Link", name: "link", widget: "string"}
+              - {label: "Description", name: "description", widget: "text"}
