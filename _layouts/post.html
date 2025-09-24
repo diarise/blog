@@ -87,7 +87,7 @@ layout: default
 
   <!-- Product Grid (2 per row) -->
   <div class="row">
-    {% for product in site.data.products limit:4 %}
+    {% for product in site.data.products.products limit:3 %}
       <div class="col-md-6 mb-4">
         {% include product-card.html 
           title=product.title 
