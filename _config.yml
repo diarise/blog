@@ -35,5 +35,5 @@ backend:
   name: github
   repo: diarise/blog   # example
   branch: main
-  base_url: https://api.netlify.com
+  base_url: https://decap-cms-oauth-omega.vercel.app/
   auth_endpoint: auth
