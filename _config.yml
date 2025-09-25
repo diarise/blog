@@ -30,3 +30,10 @@ gallery:
   - /assets/images/g1.jpg
   - /assets/images/g2.jpg
   - /assets/images/g3.jpg
+
+backend:
+  name: github
+  repo: diarise/blog   # example
+  branch: main
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
