@@ -1,8 +1,8 @@
 backend:
   name: github
-  repo: diarise/blog   # ⬅️ replace with your GitHub user/repo name
-  branch: main         # or master if your repo uses that
-  base_url: https://api.netlify.com
+  repo: diarise/blog  
+  branch: main
+  base_url: https://decap-cms-oauth-omega.vercel.app/
   auth_endpoint: auth
 
 media_folder: "assets/images/uploads"
