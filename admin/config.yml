@@ -4,6 +4,7 @@ backend:
   branch: main
   base_url: https://netlify-cms.adrianub.vercel.app
   auth_endpoint: auth
+  
 
 media_folder: "assets/images/uploads"
 public_folder: "/assets/images/uploads"
