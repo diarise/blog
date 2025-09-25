@@ -1,0 +1,7 @@
+[build]
+  command = "bundle exec jekyll build"
+  publish = "_site"
+
+[context.production.environment]
+  BUNDLE_WITHOUT = "development:test"
+  RUBY_VERSION = "2.7.7"
