@@ -2,7 +2,7 @@ backend:
   name: github
   repo: diarise/blog
   branch: main
-  base_url: https://netlify-cms-adrianub.vercel.app
+  base_url: https://decap-cms-oauth-omega.vercel.app
   auth_endpoint: auth
   
 
