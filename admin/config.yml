@@ -2,7 +2,7 @@ backend:
   name: github
   repo: diarise/blog
   branch: main
-  base_url: https://decap-cms-oauth-omega.vercel.app
+  base_url: decap-cms-oauth-provider-tawny.vercel.app
   auth_endpoint: auth
   
 
