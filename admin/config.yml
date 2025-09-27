@@ -2,7 +2,7 @@ backend:
   name: github
   repo: diarise/blog
   branch: main
-  base_url: https://decap-cms-vencax.vercel.app
+  base_url: https://decap-cms-oauth-ten.vercel.app
   auth_endpoint: auth
   
 
