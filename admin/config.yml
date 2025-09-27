@@ -4,7 +4,9 @@ backend:
   branch: main
   base_url: https://decap-cms-oauth-ten.vercel.app
   auth_endpoint: auth
-  
+
+# Enable drafts + workflow
+publish_mode: editorial_workflow  
 
 media_folder: "assets/images/uploads"
 public_folder: "/assets/images/uploads"
