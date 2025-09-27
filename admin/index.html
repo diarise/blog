@@ -4,6 +4,14 @@
     <meta charset="utf-8"/>
     <title>Voyage By Luna — Admin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <script>
+  const allowed = ["diarise@gmail.com"]; // whitelist of emails
+  const userEmail = localStorage.getItem("cmsUser");
+
+  if (!userEmail || !allowed.includes(userEmail)) {
+    document.body.innerHTML = "<h2 style='text-align:center;margin-top:20%;'>🔒 Access Denied</h2>";
+  }
+</script>
   </head>
   <body>
     <!-- Load Decap CMS -->
