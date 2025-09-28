@@ -12,6 +12,33 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://voyagebyluna.com/styles.css"> <!-- your main website styles -->
   <link rel="stylesheet" href="{{ "/assets/css/blog.css" | relative_url }}">
+  <!-- 🔥 Open Graph Meta -->
+{% if page.layout == "post" %}
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="{{ page.title | escape }}">
+  <meta property="og:description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 150 }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  {% if page.image %}
+    <meta property="og:image" content="{{ page.image | absolute_url }}">
+  {% endif %}
+{% else %}
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ site.title | escape }}">
+  <meta property="og:description" content="{{ site.description | escape }}">
+  <meta property="og:url" content="{{ site.url }}">
+  {% if site.logo %}
+    <meta property="og:image" content="{{ site.logo | absolute_url }}">
+  {% endif %}
+{% endif %}
+
+<!-- 🔥 Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@voyagebyluna">
+<meta name="twitter:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}">
+<meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 150 }}{% else %}{{ site.description | escape }}{% endif %}">
+{% if page.image %}
+  <meta name="twitter:image" content="{{ page.image | absolute_url }}">
+{% endif %}
 </head>
 <body>
 
