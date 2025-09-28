@@ -408,3 +408,19 @@ footer .list-inline-item a:hover {
     object-fit: cover;
   }
 }
+/* Pinterest Custom Button */
+.btn-pinterest {
+  display: inline-block;
+  background-color: #E60023; /* Pinterest red */
+  color: #fff !important;
+  font-weight: 600;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-pinterest:hover {
+  background-color: #c10f1c;
+  color: #fff !important;
+}
