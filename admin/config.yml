@@ -26,6 +26,7 @@ collections:
       - {label: "Featured image", name: "image", widget: "image"}
       - {label: "Excerpt", name: "excerpt", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Pinterest Link", name: "pinterest", widget: "string", required: false, hint: "Optional: Paste the Pinterest pin/board URL"}
 
   - name: "products"
     label: "Travel Store Products"
