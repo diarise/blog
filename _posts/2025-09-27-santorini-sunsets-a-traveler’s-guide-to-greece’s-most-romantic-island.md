@@ -15,6 +15,7 @@ image: https://images.unsplash.com/photo-1507525428034-b723cf961d3e
 excerpt: Discover the magic of Santorini’s iconic sunsets, blue-domed churches,
   and cliffside villages — a dream destination for couples and adventurers
   alike.
+pinterest: https://www.pinterest.com/voyagebyluna/
 ---
 Few places in the world rival the beauty of **Santorini**, Greece. Famous for its **whitewashed houses**, **blue-domed churches**, and breathtaking **sunsets in Oia**, this island is a bucket-list destination for travelers seeking romance and adventure.
 
