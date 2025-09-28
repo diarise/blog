@@ -33,7 +33,15 @@ layout: default
           {% elsif page.image %}
             <img src="{{ page.image | relative_url }}" class="img-fluid rounded shadow-sm mb-4" alt="{{ page.title }}">
           {% endif %}
-
+<!-- 🔥 Save to Pinterest CTA -->
+<div class="text-center mb-4">
+  <a href="https://pinterest.com/pin/create/button/?url={{ site.url }}{{ page.url }}&media={{ site.url }}{{ page.image }}&description={{ page.title | escape }}" 
+     target="_blank" 
+     rel="nofollow noopener" 
+     class="btn btn-pinterest">
+    📌 Save to Pinterest
+  </a>
+</div>
           <div class="post-content mb-5">
             {{ content }}
           </div>
@@ -41,21 +49,7 @@ layout: default
           <!-- Social + Author -->
           {% include share.html %}
           {% include author.html %}
-<!-- 🔥 Pinterest Save + Follow -->
-<div class="pinterest-share my-4 text-center">
-  {% if page.image %}
-    <a href="https://pinterest.com/pin/create/button/?url={{ site.url }}{{ page.url }}&media={{ site.url }}{{ page.image }}&description={{ page.title | escape }}" 
-       target="_blank" 
-       rel="nofollow noopener" 
-       class="btn btn-pinterest">
-      📌 Save to Pinterest
-    </a>
-  {% endif %}
 
-  <div class="mt-3">
-    <a data-pin-do="buttonFollow" href="https://www.pinterest.com/voyagebyluna/">Follow Voyage By Luna</a>
-  </div>
-</div>
           <!-- 🔥 Related Posts Section -->
           <hr>
           <div class="related-posts mb-4">
