@@ -99,12 +99,6 @@ Tip: Stay near the metro for easy access to attractions if you’re not renting 
 * **Family Friendly**: Dubai Parks & Resorts, KidZania, and Aquaventure Waterpark make the city a playground for children.
 * **Muslim-Friendly**: Halal dining is abundant, prayer rooms are in malls and attractions, and family-oriented activities are everywhere.
 
-
-
-
-
-
-
 ## **Frequently Asked Questions About Dubai**
 
 **1. Is Dubai safe for tourists?**
@@ -126,7 +120,5 @@ Dubai can be as affordable or luxurious as you make it. Public transportation, b
 **5. How many days do you need in Dubai?**
 
 A 4–5 day trip is ideal to explore the main attractions, though even a short stopover offers a great taste of the city.
-
-## **Conclusion**
 
 Dubai is more than a glittering skyline—it’s a city of contrasts, where futuristic marvels meet centuries-old traditions. Whether you’re scaling the Burj Khalifa, dining by the creek, or venturing into the desert, Dubai offers experiences that stay with you long after you leave.
