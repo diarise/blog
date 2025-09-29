@@ -22,6 +22,8 @@ I found a spot on the low wall, squeezed between a honeymoon couple and a group 
 
 As the sun dipped lower, conversation hushed. Eyes turned westward. And then it happened — the sky erupted in a cascade of colors, flaming orange and rose pink melting into the deep indigo of night. The sea shimmered, the domes of Oia’s churches glowed, and for a breathless moment, the whole village seemed suspended in light.
 
+![](/assets/images/uploads/pexels-nextvoyage-629154.jpg)
+
 I glanced around. The honeymoon couple leaned closer, sharing a quiet kiss. The backpackers cheered, raising their beers. A child gasped and tugged at her mother’s sleeve. And I just sat there, heart thudding, tears pricking unexpectedly at the corners of my eyes. It wasn’t just beautiful — it was unifying. In that moment, none of us were strangers.
 
 When the sun finally sank into the horizon, applause broke out — a spontaneous, joyful ovation for a day well lived. Slowly, the crowd dispersed into the labyrinth of Oia’s streets, searching for wine, for gyros, for the night’s next story. I lingered a little longer, watching the last streak of pink fade into twilight. 
