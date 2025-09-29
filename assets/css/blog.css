@@ -424,3 +424,34 @@ footer .list-inline-item a:hover {
   background-color: #c10f1c;
   color: #fff !important;
 }
+/* Post Content Images */
+.post-content img {
+  max-width: 100%;        /* never overflow the container */
+  height: auto;           /* keep correct aspect ratio */
+  display: block;         /* removes inline gap below */
+  margin: 1.5rem auto;    /* center and add space around */
+  border-radius: 10px;    /* match your theme style */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* subtle shadow */
+}
+.post-content figcaption {
+  font-size: 0.95rem;
+  color: #555;
+  text-align: center;
+  margin-top: -1rem;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+/* Post Content Links */
+.post-content a {
+  color: #003580;             /* your brand navy blue */
+  font-weight: 600;           /* make them stand out */
+  text-decoration: none;      /* remove default underline */
+  border-bottom: 2px solid rgba(0,53,128,0.2); /* subtle underline effect */
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.post-content a:hover {
+  color: #FF6C00;             /* your accent orange */
+  border-bottom-color: #FF6C00;
+  text-decoration: none;      /* keep it clean */
+}
