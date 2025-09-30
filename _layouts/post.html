@@ -7,18 +7,29 @@ layout: default
     <div class="row justify-content-center">
       <div class="col-lg-8">
         <article class="post">
-          <div class="text-center mb-4" style="margin-top: 3rem!important;">
+          <div class="text-center mb-5" style="margin-top: 3rem!important;">
             <h2 class="text-uppercase font-weight-bold">{{ page.title }}</h2>
             <p class="text-muted">{{ page.date | date: "%B %d, %Y" }}</p>
 
             <!-- 🔥 Categories -->
             {% if page.categories %}
-              <p class="post-categories">
+              <p>
                 {% for category in page.categories %}
-  <a href="{{ site.baseurl }}/category/{{ category | slugify }}" class="badge badge-primary mx-1">
-    {{ category }}
-  </a>
-{% endfor %}
+                  <a href="{{ '/category/' | append: category | slugify | relative_url }}" class="badge badge-primary mx-1">
+                    {{ category }}
+                  </a>
+                {% endfor %}
+              </p>
+            {% endif %}
+
+            <!-- 🔥 Tags -->
+            {% if page.tags %}
+              <p>
+                {% for tag in page.tags %}
+                  <a href="{{ '/tag/' | append: tag | slugify | relative_url }}" class="badge badge-secondary mx-1">
+                    #{{ tag }}
+                  </a>
+                {% endfor %}
               </p>
             {% endif %}
           </div>
@@ -46,11 +57,11 @@ layout: default
           {% endif %}
 
           <!-- 🔥 Save to Pinterest CTA -->
-          <div class="pinterest-wrapper text-right mb-4">
+          <div class="pinterest-wrapper text-right">
             <a href="https://pinterest.com/pin/create/button/?url={{ site.url }}{{ page.url }}&media={{ site.url }}{{ page.image }}&description={{ page.title | escape }}" 
-              target="_blank" 
-              rel="nofollow noopener" 
-              class="btn btn-pinterest">
+               target="_blank" 
+               rel="nofollow noopener" 
+               class="btn btn-pinterest">
               📌 Save to Pinterest
             </a>
           </div>
@@ -59,23 +70,9 @@ layout: default
             {{ content }}
           </div>
 
-          <!-- 🔥 Tags -->
-          {% if page.tags %}
-            <div class="post-tags mt-4 mb-5">
-              <span class="font-weight-bold">Tags:</span>
-              {% for tag in page.tags %}
-  <a href="{{ site.baseurl }}/tag/{{ tag | slugify }}" class="badge badge-secondary mx-1">
-    #{{ tag }}
-  </a>
-{% endfor %}
-            </div>
-          {% endif %}
-
-          <!-- Social + Author -->
           {% include share.html %}
           {% include author.html %}
 
-          <!-- 🔥 Related Posts Section -->
           <hr>
           <div class="related-posts mb-4">
             <h3 class="mb-4">You Might Also Like</h3>
@@ -109,16 +106,12 @@ layout: default
 
           {% include newsletter.html %}
           {% include cta.html %}
-          <!-- 🔥 End Related Posts Section -->
 
           <!-- 🔥 Travel Store Section -->
           <div class="cta-box text-center my-5 p-5 rounded shadow-sm" 
-              style="background: linear-gradient(135deg, rgba(255,108,0,0.08), rgba(0,53,128,0.06));">
-
+               style="background: linear-gradient(135deg, rgba(255,108,0,0.08), rgba(0,53,128,0.06));">
             <h3 class="mb-3 font-weight-bold">Travel Essentials Store</h3>
             <p class="mb-5">Explore our curated Amazon storefront for gear, books, and accessories — handpicked to make your journeys easier and more enjoyable.</p>
-
-            <!-- Product Grid (2 per row) -->
             <div class="row">
               {% for product in site.data.products.products limit:3 %}
                 <div class="col-md-6 mb-4">
@@ -130,15 +123,12 @@ layout: default
                 </div>
               {% endfor %}
             </div>
-
-            <!-- CTA Button -->
             <div class="text-center mt-4">
               <a href="https://www.amazon.com/shop/voyagebyluna" target="_blank" rel="nofollow noopener sponsored" class="btn btn-lg btn-primary">
                 Visit Full Amazon Store →
               </a>
             </div>
           </div>
-          <!-- 🔥 End Travel Store Section -->
         </article>
       </div>
     </div>
