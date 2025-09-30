@@ -455,3 +455,32 @@ footer .list-inline-item a:hover {
   border-bottom-color: #FF6C00;
   text-decoration: none;      /* keep it clean */
 }
+/* Categories */
+.post-categories .badge {
+  background-color: #003580;
+  color: #fff;
+  margin: 0 5px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+}
+
+/* Tags */
+.post-tags {
+  margin-top: 2rem;
+}
+
+.post-tags .badge {
+  background: #f1f1f1;
+  color: #333;
+  margin: 0 5px;
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  transition: background 0.3s ease;
+}
+
+.post-tags .badge:hover {
+  background: #FF6C00;
+  color: #fff;
+}
