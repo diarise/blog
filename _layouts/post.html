@@ -12,26 +12,16 @@ layout: default
             <p class="text-muted">{{ page.date | date: "%B %d, %Y" }}</p>
 
             <!-- 🔥 Categories -->
-            {% if page.categories %}
-              <p>
-                {% for category in page.categories %}
-                  <a href="{{ '/category/' | append: category | slugify | relative_url }}" class="badge badge-primary mx-1">
-                    {{ category }}
-                  </a>
-                {% endfor %}
-              </p>
-            {% endif %}
+  {% if page.categories %}
+    <p class="mt-2">
+      {% for category in page.categories %}
+        <a href="/categories/{{ category | slugify }}/" class="badge badge-primary">{{ category }}</a>
+      {% endfor %}
+    </p>
+  {% endif %}
+              
 
-            <!-- 🔥 Tags -->
-            {% if page.tags %}
-              <p>
-                {% for tag in page.tags %}
-                  <a href="{{ '/tag/' | append: tag | slugify | relative_url }}" class="badge badge-secondary mx-1">
-                    #{{ tag }}
-                  </a>
-                {% endfor %}
-              </p>
-            {% endif %}
+            
           </div>
 
           {% if page.gallery %}
@@ -69,7 +59,15 @@ layout: default
           <div class="post-content mb-5">
             {{ content }}
           </div>
-
+<!-- 🔥 Tags -->
+{% if page.tags %}
+  <div class="mb-4">
+    <strong>Tags:</strong>
+    {% for tag in page.tags %}
+      <a href="/tags/{{ tag | slugify }}/" class="badge badge-secondary">{{ tag }}</a>
+    {% endfor %}
+  </div>
+{% endif %}
           {% include share.html %}
           {% include author.html %}
 
