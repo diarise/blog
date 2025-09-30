@@ -58,13 +58,9 @@ Takoyaki, the city’s beloved octopus-filled snack, sizzles on hot griddles as 
 Beyond the well-known landmarks, it’s the subtle details that define travel in Japan:
 
 * The calm order of people lining up quietly at train stations.
-
 * Vending machines offering hot cans of coffee on chilly mornings.
-
 * The sudden discovery of a peaceful garden in the middle of a bustling city.
-
 * Strangers offering directions with kindness, even when language barriers exist.
-
 
 These everyday gestures and details create a tapestry of impressions that stay with travelers long after their return.
 
@@ -73,6 +69,8 @@ These everyday gestures and details create a tapestry of impressions that stay w
 Japan is a destination where modern innovation and ancient tradition coexist seamlessly. It teaches travelers to notice — to pause at a quiet temple, to taste the seasons in a meal, to watch the beauty in fleeting moments.
 
 For anyone dreaming of a trip, Japan offers countless paths: from the dazzling nights of Tokyo to the calm beauty of Kyoto’s temples, from bowing deer in Nara to the sizzling flavors of Osaka. Those ready to begin can easily [book an activity](https://www.viator.com/Japan/d16-ttd?pid=P00006875&uid=U00418023&mcid=58086&currency=USD) or request a personalized [travel quote](https://forms.gle/P4nqRFgJPHZRUPoJ7) to start crafting their own journey.
+
+#### *Travel far enough, you meet yourself. — David Mitchell*
 
 ### **Final Reflection**
 
