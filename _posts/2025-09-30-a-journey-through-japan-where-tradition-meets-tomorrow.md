@@ -70,10 +70,10 @@ Japan is a destination where modern innovation and ancient tradition coexist sea
 
 For anyone dreaming of a trip, Japan offers countless paths: from the dazzling nights of Tokyo to the calm beauty of Kyoto’s temples, from bowing deer in Nara to the sizzling flavors of Osaka. Those ready to begin can easily [book an activity](https://www.viator.com/Japan/d16-ttd?pid=P00006875&uid=U00418023&mcid=58086&currency=USD) or request a personalized [travel quote](https://forms.gle/P4nqRFgJPHZRUPoJ7) to start crafting their own journey.
 
-#### *Travel far enough, you meet yourself. — David Mitchell*
+###### *Travel far enough, you meet yourself. — David Mitchell*\
+\
+**Final Reflection**
 
-### **Final Reflection**
-
-Japan doesn’t just welcome visitors; it invites them to slow down and connect. It shows that beauty exists in contrasts, in the energy of a city and the silence of a garden, in the modern and the traditional, in the smallest gestures and the grandest sights.
+Japan doesn’t just welcome visitors; it invites them to slow down and connect. It shows that beauty exists in contrasts, in the energy of a city and the silence of a garden, in the modern and the traditional, in the smallest gestures and the grandest sights. 
 
 And perhaps that is why Japan never feels finished. With every season, every festival, every fleeting cherry blossom, it writes a new story — waiting for travelers to arrive and be part of it.
