@@ -7,9 +7,20 @@ layout: default
     <div class="row justify-content-center">
       <div class="col-lg-8">
         <article class="post">
-          <div class="text-center mb-5" style="margin-top: 3rem!important;">
+          <div class="text-center mb-4" style="margin-top: 3rem!important;">
             <h2 class="text-uppercase font-weight-bold">{{ page.title }}</h2>
             <p class="text-muted">{{ page.date | date: "%B %d, %Y" }}</p>
+
+            <!-- 🔥 Categories -->
+            {% if page.categories %}
+              <p class="post-categories">
+                {% for category in page.categories %}
+                  <a href="{{ site.baseurl }}/categories/{{ category | slugify }}/" class="badge badge-primary">
+                    {{ category }}
+                  </a>
+                {% endfor %}
+              </p>
+            {% endif %}
           </div>
 
           {% if page.gallery %}
@@ -33,18 +44,30 @@ layout: default
           {% elsif page.image %}
             <img src="{{ page.image | relative_url }}" class="img-fluid rounded shadow-sm mb-4" alt="{{ page.title }}">
           {% endif %}
-<!-- 🔥 Save to Pinterest CTA -->
-<div class="pinterest-wrapper">
-  <a href="https://pinterest.com/pin/create/button/?url={{ site.url }}{{ page.url }}&media={{ site.url }}{{ page.image }}&description={{ page.title | escape }}" 
-     target="_blank" 
-     rel="nofollow noopener" 
-     class="btn btn-pinterest">
-    📌 Save to Pinterest
-  </a>
-</div>
+
+          <!-- 🔥 Save to Pinterest CTA -->
+          <div class="pinterest-wrapper text-right mb-4">
+            <a href="https://pinterest.com/pin/create/button/?url={{ site.url }}{{ page.url }}&media={{ site.url }}{{ page.image }}&description={{ page.title | escape }}" 
+              target="_blank" 
+              rel="nofollow noopener" 
+              class="btn btn-pinterest">
+              📌 Save to Pinterest
+            </a>
+          </div>
+
           <div class="post-content mb-5">
             {{ content }}
           </div>
+
+          <!-- 🔥 Tags -->
+          {% if page.tags %}
+            <div class="post-tags mt-4 mb-5">
+              <span class="font-weight-bold">Tags:</span>
+              {% for tag in page.tags %}
+                <a href="{{ site.baseurl }}/tags/{{ tag | slugify }}/" class="badge badge-light">{{ tag }}</a>
+              {% endfor %}
+            </div>
+          {% endif %}
 
           <!-- Social + Author -->
           {% include share.html %}
@@ -85,35 +108,35 @@ layout: default
           {% include newsletter.html %}
           {% include cta.html %}
           <!-- 🔥 End Related Posts Section -->
-<!-- 🔥 Related Products Section -->
-<!-- 🔥 Travel Store Section -->
-<div class="cta-box text-center my-5 p-5 rounded shadow-sm" 
-     style="background: linear-gradient(135deg, rgba(255,108,0,0.08), rgba(0,53,128,0.06));">
 
-  <h3 class="mb-3 font-weight-bold">Travel Essentials Store</h3>
-  <p class="mb-5">Explore our curated Amazon storefront for gear, books, and accessories — handpicked to make your journeys easier and more enjoyable.</p>
+          <!-- 🔥 Travel Store Section -->
+          <div class="cta-box text-center my-5 p-5 rounded shadow-sm" 
+              style="background: linear-gradient(135deg, rgba(255,108,0,0.08), rgba(0,53,128,0.06));">
 
-  <!-- Product Grid (2 per row) -->
-  <div class="row">
-    {% for product in site.data.products.products limit:3 %}
-      <div class="col-md-6 mb-4">
-        {% include product-card.html 
-          title=product.title 
-          image=product.image 
-          link=product.link 
-          description=product.description %}
-      </div>
-    {% endfor %}
-  </div>
+            <h3 class="mb-3 font-weight-bold">Travel Essentials Store</h3>
+            <p class="mb-5">Explore our curated Amazon storefront for gear, books, and accessories — handpicked to make your journeys easier and more enjoyable.</p>
 
-  <!-- CTA Button -->
-  <div class="text-center mt-4">
-    <a href="https://www.amazon.com/shop/voyagebyluna" target="_blank" rel="nofollow noopener sponsored" class="btn btn-lg btn-primary">
-      Visit Full Amazon Store →
-    </a>
-  </div>
-</div>
-<!-- 🔥 End Travel Store Section -->
+            <!-- Product Grid (2 per row) -->
+            <div class="row">
+              {% for product in site.data.products.products limit:3 %}
+                <div class="col-md-6 mb-4">
+                  {% include product-card.html 
+                    title=product.title 
+                    image=product.image 
+                    link=product.link 
+                    description=product.description %}
+                </div>
+              {% endfor %}
+            </div>
+
+            <!-- CTA Button -->
+            <div class="text-center mt-4">
+              <a href="https://www.amazon.com/shop/voyagebyluna" target="_blank" rel="nofollow noopener sponsored" class="btn btn-lg btn-primary">
+                Visit Full Amazon Store →
+              </a>
+            </div>
+          </div>
+          <!-- 🔥 End Travel Store Section -->
         </article>
       </div>
     </div>
