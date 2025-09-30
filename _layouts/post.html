@@ -15,10 +15,10 @@ layout: default
             {% if page.categories %}
               <p class="post-categories">
                 {% for category in page.categories %}
-                  <a href="{{ site.baseurl }}/categories/{{ category | slugify }}/" class="badge badge-primary">
-                    {{ category }}
-                  </a>
-                {% endfor %}
+  <a href="{{ site.baseurl }}/category/{{ category | slugify }}" class="badge badge-primary mx-1">
+    {{ category }}
+  </a>
+{% endfor %}
               </p>
             {% endif %}
           </div>
@@ -64,8 +64,10 @@ layout: default
             <div class="post-tags mt-4 mb-5">
               <span class="font-weight-bold">Tags:</span>
               {% for tag in page.tags %}
-                <a href="{{ site.baseurl }}/tags/{{ tag | slugify }}/" class="badge badge-light">{{ tag }}</a>
-              {% endfor %}
+  <a href="{{ site.baseurl }}/tag/{{ tag | slugify }}" class="badge badge-secondary mx-1">
+    #{{ tag }}
+  </a>
+{% endfor %}
             </div>
           {% endif %}
 
