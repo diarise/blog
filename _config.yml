@@ -30,3 +30,9 @@ gallery:
   - /assets/images/g1.jpg
   - /assets/images/g2.jpg
   - /assets/images/g3.jpg
+
+collections:
+  categories:
+    output: true
+  tags:
+    output: true
