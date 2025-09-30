@@ -4,20 +4,23 @@ layout: default
 
 <section id="tag" class="py-5">
   <div class="container">
-    <h1 class="mb-4">Posts tagged “{{ page.title }}”</h1>
+    <h2 class="mb-4">Posts tagged “{{ page.title }}”</h2>
+
     <div class="row">
-      {% assign posts_with_tag = site.tags[page.slug] %}
-      {% if posts_with_tag %}
-        {% for post in posts_with_tag %}
-          <div class="col-md-6 mb-4">
-            <div class="card h-100 shadow-sm related-card">
+      {% assign tag_posts = site.posts | where_exp: "post", "post.tags contains page.title" %}
+      {% if tag_posts.size > 0 %}
+        {% for post in tag_posts %}
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card h-100 shadow-sm">
               {% if post.image %}
                 <a href="{{ post.url }}">
                   <img src="{{ post.image | relative_url }}" class="card-img-top" alt="{{ post.title }}">
                 </a>
               {% endif %}
               <div class="card-body">
-                <h5 class="card-title"><a href="{{ post.url }}">{{ post.title }}</a></h5>
+                <h5 class="card-title">
+                  <a href="{{ post.url }}" class="text-dark">{{ post.title }}</a>
+                </h5>
                 <p class="card-text">{{ post.excerpt }}</p>
                 <a href="{{ post.url }}" class="btn btn-outline-primary btn-sm">Read More</a>
               </div>
