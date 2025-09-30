@@ -2,28 +2,31 @@
 layout: default
 ---
 
-<section class="py-5">
+<section id="category" class="py-5">
   <div class="container">
-    <h2 class="mb-4">Posts in Category: {{ page.category | capitalize }}</h2>
+    <h1 class="mb-4">Posts in “{{ page.title }}”</h1>
     <div class="row">
-      {% assign category_posts = site.categories[page.category] %}
-      {% for post in category_posts %}
-        <div class="col-md-6 mb-4">
-          <div class="card h-100 shadow-sm">
-            {% if post.image %}
-              <a href="{{ post.url }}">
-                <img src="{{ post.image | relative_url }}" class="card-img-top" alt="{{ post.title }}">
-              </a>
-            {% endif %}
-            <div class="card-body">
-              <h5><a href="{{ post.url }}" class="text-dark">{{ post.title }}</a></h5>
-              <p class="text-muted">{{ post.date | date: "%B %d, %Y" }}</p>
-              <p>{{ post.excerpt }}</p>
-              <a href="{{ post.url }}" class="btn btn-outline-primary btn-sm">Read More</a>
+      {% assign posts_in_category = site.categories[page.slug] %}
+      {% if posts_in_category %}
+        {% for post in posts_in_category %}
+          <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-sm related-card">
+              {% if post.image %}
+                <a href="{{ post.url }}">
+                  <img src="{{ post.image | relative_url }}" class="card-img-top" alt="{{ post.title }}">
+                </a>
+              {% endif %}
+              <div class="card-body">
+                <h5 class="card-title"><a href="{{ post.url }}">{{ post.title }}</a></h5>
+                <p class="card-text">{{ post.excerpt }}</p>
+                <a href="{{ post.url }}" class="btn btn-outline-primary btn-sm">Read More</a>
+              </div>
             </div>
           </div>
-        </div>
-      {% endfor %}
+        {% endfor %}
+      {% else %}
+        <p>No posts found in this category.</p>
+      {% endif %}
     </div>
   </div>
 </section>
