@@ -14,11 +14,17 @@ categories = []
 tags = []
 
 Dir["_posts/*.{md,markdown}"].each do |post_file|
-  # Read just the front matter safely
   content = File.read(post_file)
+
+  # Extract YAML front matter
   if content =~ /^(---\s*\n.*?\n?)^(---\s*$\n?)/m
-    frontmatter = YAML.safe_load($1, permitted_classes: [Date, Time], aliases: true) || {}
-    
+    raw_frontmatter = $1
+
+    # Remove date/time keys before parsing to avoid errors
+    sanitized_frontmatter = raw_frontmatter.gsub(/^date:.*$/, '')
+
+    frontmatter = YAML.safe_load(sanitized_frontmatter, aliases: true) || {}
+
     if frontmatter["categories"]
       categories.concat(Array(frontmatter["categories"]))
     end
