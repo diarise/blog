@@ -70,7 +70,8 @@ Japan is a destination where modern innovation and ancient tradition coexist sea
 
 For anyone dreaming of a trip, Japan offers countless paths: from the dazzling nights of Tokyo to the calm beauty of Kyoto’s temples, from bowing deer in Nara to the sizzling flavors of Osaka. Those ready to begin can easily [book an activity](https://www.viator.com/Japan/d16-ttd?pid=P00006875&uid=U00418023&mcid=58086&currency=USD) or request a personalized [travel quote](https://forms.gle/P4nqRFgJPHZRUPoJ7) to start crafting their own journey.
 
-###### *Travel far enough, you meet yourself. — David Mitchell*\
+###### *Travel far enough, you meet yourself. — David Mitchell*
+
 \
 **Final Reflection**
 
