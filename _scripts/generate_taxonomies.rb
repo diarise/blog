@@ -14,12 +14,17 @@ categories = []
 tags = []
 
 Dir["_posts/*.{md,markdown}"].each do |post_file|
-  frontmatter = YAML.load_file(post_file)
-  if frontmatter["categories"]
-    categories.concat(frontmatter["categories"])
-  end
-  if frontmatter["tags"]
-    tags.concat(frontmatter["tags"])
+  # Read just the front matter safely
+  content = File.read(post_file)
+  if content =~ /^(---\s*\n.*?\n?)^(---\s*$\n?)/m
+    frontmatter = YAML.safe_load($1, permitted_classes: [Date, Time], aliases: true) || {}
+    
+    if frontmatter["categories"]
+      categories.concat(Array(frontmatter["categories"]))
+    end
+    if frontmatter["tags"]
+      tags.concat(Array(frontmatter["tags"]))
+    end
   end
 end
 
