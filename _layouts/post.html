@@ -7,26 +7,24 @@ layout: default
     <div class="row justify-content-center">
       <div class="col-lg-8">
         <article class="post">
-          
-          <!-- 🔥 Categories above title -->
-          {% if page.categories %}
-            <div class="mb-2">
-              {% for category in page.categories %}
-                <a href="{{ '/categories/' | append: category | relative_url }}" 
-                   class="badge badge-primary text-uppercase px-3 py-1 mr-2">
-                  {{ category }}
-                </a>
-              {% endfor %}
-            </div>
-          {% endif %}
-
-          <!-- Title + Date -->
+          <!-- 🔥 Title + Date + Categories -->
           <div class="text-center mb-5" style="margin-top: 3rem!important;">
             <h2 class="text-uppercase font-weight-bold">{{ page.title }}</h2>
             <p class="text-muted">{{ page.date | date: "%B %d, %Y" }}</p>
+
+            {% if page.categories %}
+              <div class="mt-2">
+                {% for category in page.categories %}
+                  <a href="{{ '/categories/' | append: category | append: '/' | relative_url }}" 
+                     class="badge badge-primary text-uppercase px-3 py-1 mr-2">
+                    {{ category }}
+                  </a>
+                {% endfor %}
+              </div>
+            {% endif %}
           </div>
 
-          <!-- Gallery or Featured Image -->
+          <!-- 🔥 Featured Image or Gallery -->
           {% if page.gallery %}
             <div id="postGallery" class="carousel slide mb-4" data-ride="carousel">
               <div class="carousel-inner">
@@ -49,8 +47,8 @@ layout: default
             <img src="{{ page.image | relative_url }}" class="img-fluid rounded shadow-sm mb-4" alt="{{ page.title }}">
           {% endif %}
 
-          <!-- 🔥 Save to Pinterest CTA -->
-          <div class="pinterest-wrapper text-right">
+          <!-- 🔥 Pinterest Save Button -->
+          <div class="pinterest-wrapper text-right mb-3">
             <a href="https://pinterest.com/pin/create/button/?url={{ site.url }}{{ page.url }}&media={{ site.url }}{{ page.image }}&description={{ page.title | escape }}" 
                target="_blank" 
                rel="nofollow noopener" 
@@ -59,29 +57,29 @@ layout: default
             </a>
           </div>
 
-          <!-- Post Content -->
+          <!-- 🔥 Post Body -->
           <div class="post-content mb-5">
             {{ content }}
           </div>
 
-          <!-- 🔥 Tags below content -->
+          <!-- 🔥 Tags -->
           {% if page.tags %}
-            <div class="mt-4">
-              <strong>Tags:</strong>
+            <div class="post-tags mb-4">
+              <span class="font-weight-bold">Tags:</span>
               {% for tag in page.tags %}
-                <a href="{{ '/tags/' | append: tag | relative_url }}" 
-                   class="badge badge-light border px-2 py-1 mr-1">
-                  #{{ tag }}
+                <a href="{{ '/tags/' | append: tag | append: '/' | relative_url }}" 
+                   class="badge badge-secondary px-2 py-1 mr-2">
+                  {{ tag }}
                 </a>
               {% endfor %}
             </div>
           {% endif %}
 
-          <!-- Social + Author -->
+          <!-- 🔥 Social + Author -->
           {% include share.html %}
           {% include author.html %}
 
-          <!-- Related Posts Section -->
+          <!-- 🔥 Related Posts Section -->
           <hr>
           <div class="related-posts mb-4">
             <h3 class="mb-4">You Might Also Like</h3>
@@ -116,13 +114,14 @@ layout: default
           {% include newsletter.html %}
           {% include cta.html %}
 
-          <!-- Travel Store Section -->
+          <!-- 🔥 Travel Store Section -->
           <div class="cta-box text-center my-5 p-5 rounded shadow-sm" 
                style="background: linear-gradient(135deg, rgba(255,108,0,0.08), rgba(0,53,128,0.06));">
 
             <h3 class="mb-3 font-weight-bold">Travel Essentials Store</h3>
             <p class="mb-5">Explore our curated Amazon storefront for gear, books, and accessories — handpicked to make your journeys easier and more enjoyable.</p>
 
+            <!-- Product Grid -->
             <div class="row">
               {% for product in site.data.products.products limit:3 %}
                 <div class="col-md-6 mb-4">
@@ -141,8 +140,6 @@ layout: default
               </a>
             </div>
           </div>
-          <!-- End Travel Store Section -->
-
         </article>
       </div>
     </div>
