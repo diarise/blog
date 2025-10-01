@@ -34,4 +34,4 @@ I lingered a little longer, sipping the last of the lukewarm coffee I had carrie
 
 Walking back down, the streets no longer felt deserted. Shopkeepers were rolling up shutters, flower stands were being arranged, and the faint buzz of everyday Paris returned. I couldn’t help but smile — I had seen a side of the city few tourists do. Not the Paris of postcards, but the Paris of in-between moments, the version that only reveals itself when you’re willing to wake up a little earlier, climb a little higher, and sit still long enough to notice.
 
-And maybe that’s the secret. Paris doesn’t need to impress you with grandeur at every turn. Sometimes it whispers instead of shouting. And if you’re lucky enough to catch it at dawn in Montmartre, you’ll carry that quiet magic with you long after the sun is up.
+And maybe that’s the secret. Paris doesn’t need to impress you with grandeur at every turn. Sometimes it whispers instead of shouting. And if you’re lucky enough to catch it at dawn in Montmartre, you’ll carry that quiet magic with you long after the sun is up...
