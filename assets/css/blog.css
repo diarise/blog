@@ -1,26 +1,71 @@
-/* Blog Homepage */
+/* ================================
+   BLOG STYLING (VOYAGE BY LUNA)
+   ================================ */
+
+/* ----------------
+   Blog Homepage
+------------------- */
 #blog h1 {
   font-size: 2.5rem;
   font-weight: bold;
   color: #003580;
 }
 
-#blog .card {
+#blog h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
+#blog .card,
+.blog-card {
   border: none;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.25s ease;
+  overflow: hidden;
 }
 
-#blog .card:hover {
+#blog .card:hover,
+.blog-card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
 }
 
-#blog .card-title {
-  font-size: 1.25rem;
+.blog-card img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.blog-card h5 {
+  font-size: 1.1rem;
   font-weight: 600;
+  margin-bottom: 0.75rem;
 }
 
-/* Single Post */
+.blog-card .card-text {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* ----------------
+   Featured Post
+------------------- */
+#blog .row.mb-5 h2 {
+  font-size: 2rem;
+}
+
+#blog .row.mb-5 img {
+  border-radius: 10px;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  max-height: 400px;
+}
+
+/* ----------------
+   Single Post Page
+------------------- */
 #single-post h1 {
   font-size: 2.2rem;
   font-weight: bold;
@@ -38,52 +83,43 @@
   margin-bottom: 1.5rem;
 }
 
-footer .list-inline-item a {
-  color: #003580;
-  transition: color 0.3s ease;
-}
-
-footer .list-inline-item a:hover {
-  color: #FF6C00;
-}
-
-/* Featured Post */
-#blog .row.mb-5 h2 {
-  font-size: 2rem;
-}
-
-#blog .row.mb-5 img {
-  border-radius: 10px;
-  width: 100%;
-  aspect-ratio: 16 / 9;   /* ✅ consistent widescreen ratio */
-  object-fit: cover;      /* ✅ prevents distortion */
-  max-height: 400px;
-}
-
-/* Section headers */
-#blog h3 {
-  font-size: 1.75rem;
-  font-weight: 700;
-  margin-top: 2rem;
-}
-
-/* Smaller cards below */
-#blog .card {
-  border: none;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
-}
-
-#blog .card:hover {
-  transform: translateY(-5px);
-}
-
-#blog .card-title {
-  font-size: 1.2rem;
+/* ----------------
+   Categories & Tags
+------------------- */
+.post-categories .badge {
+  background-color: #003580;
+  color: #fff;
+  font-size: 0.85rem;
   font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 20px;
+  padding: 0.4rem 0.9rem;
+  transition: background-color 0.3s ease;
+}
+.post-categories .badge:hover {
+  background-color: #FF6C00;
+  color: #fff;
+  text-decoration: none;
 }
 
-/* Related posts */
+.post-tags .badge {
+  background-color: #f1f1f1;
+  color: #333;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border-radius: 12px;
+  padding: 0.3rem 0.7rem;
+  transition: all 0.3s ease;
+}
+.post-tags .badge:hover {
+  background-color: #FF6C00;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* ----------------
+   Related Posts
+------------------- */
 .related-posts h3 {
   font-size: 1.6rem;
   font-weight: 700;
@@ -107,142 +143,58 @@ footer .list-inline-item a:hover {
   object-fit: cover;
 }
 
-.related-posts .card-body {
-  padding: 1rem;
-}
-
-.related-posts .card-title {
-  font-size: 1.05rem;
-  margin-bottom: .5rem;
-}
-
-.related-posts .card-text {
-  color: #555;
-  font-size: 0.95rem;
-  margin-bottom: .75rem;
-}
-
-.related-posts .btn-primary {
-  background-color: #FF6C00;
-  border-color: #FF6C00;
-}
-
-/* share buttons */
-.share-buttons a { 
-  color: #003580; 
-  margin-right: 10px; 
-}
-.share-buttons a:hover { 
-  color: #FF6C00; 
-}
-
-/* author box */
-.author-box img { 
-  border: 3px solid rgba(0,0,0,0.05); 
-}
-.author-box h5 { 
-  margin: 0; 
-  font-weight: 700; 
-}
-
-/* newsletter */
-.newsletter-box input { 
-  max-width: 380px; 
-  margin: 0 auto; 
-  display: block; 
-}
-
-/* CTA */
-.cta-box .btn-primary { 
-  background-color: #FF6C00; 
-  border-color: #FF6C00; 
-}
-
-/* carousel */
-#postGallery .carousel-item img { 
-  max-height: 500px; 
-  object-fit: cover; 
-}
-
-/* related posts (if not already present) */
-.related-posts .related-card { 
-  border: none; 
-  border-radius: 10px; 
-}
-
-/* Newsletter Box */
-.newsletter-box {
-  background: #f9f9f9;
-  border: 1px solid #eaeaea;
-  border-radius: 12px;
-  max-width: 600px;
-  margin: 0 auto;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-}
-
-.newsletter-box h4 {
-  color: #003580;
-  font-weight: 700;
-  margin-bottom: 1rem;
-}
-
-.newsletter-box input[type="email"] {
-  max-width: 380px;
-  margin: 0 auto;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-}
-
-.newsletter-box button {
-  background-color: #FF6C00;
-  border-color: #FF6C00;
-  border-radius: 8px;
-  padding: 0.5rem 1.5rem;
-}
-
-.newsletter-box button:hover {
-  background-color: #e85e00;
-  border-color: #e85e00;
-}
-
-/* CTA Box */
+/* ----------------
+   CTA & Newsletter
+------------------- */
 .cta-box {
   background: linear-gradient(135deg, rgba(255,108,0,0.08), rgba(0,53,128,0.06));
   border-radius: 12px;
   max-width: 700px;
   margin: 2rem auto;
   box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+  padding: 2rem;
+  text-align: center;
 }
 
-.cta-box h4 {
+.cta-box h4,
+.newsletter-box h4 {
   color: #003580;
   font-weight: 700;
-  margin-bottom: 0.5rem;
 }
 
-.cta-box p {
-  font-size: 1.1rem;
-  color: #333;
-  margin-bottom: 1rem;
-}
-
-.cta-box .btn-primary {
+.cta-box .btn-primary,
+.newsletter-box button,
+.product-card .btn {
   background-color: #FF6C00;
   border-color: #FF6C00;
   border-radius: 8px;
-  padding: 0.75rem 2rem;
-  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
 }
 
-.cta-box .btn-primary:hover {
+.cta-box .btn-primary:hover,
+.newsletter-box button:hover,
+.product-card .btn:hover {
   background-color: #e85e00;
   border-color: #e85e00;
 }
 
-/* Product Card Styling */
-.product-card {
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+.newsletter-box {
+  background: #f9f9f9;
+  border: 1px solid #eaeaea;
   border-radius: 12px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+/* ----------------
+   Product Cards
+------------------- */
+.product-card {
+  border-radius: 12px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
   overflow: hidden;
 }
 
@@ -259,180 +211,18 @@ footer .list-inline-item a:hover {
   padding: 10px;
 }
 
-.product-card h5 {
-  font-size: 1rem;
-  font-weight: 600;
-  margin-top: 0.5rem;
-}
-
-.product-card .btn {
-  background-color: #FF6C00;
-  border-color: #FF6C00;
-  border-radius: 8px;
-  padding: 0.5rem 1rem;
-}
-
-.product-card .btn:hover {
-  background-color: #e85e00;
-  border-color: #e85e00;
-}
-
-/* Blog Post Card Styling */
-.blog-card {
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-  border-radius: 12px;
-  overflow: hidden;
-}
-
-.blog-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
-}
-
-.blog-card img {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-}
-
-.blog-card h5 {
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin-bottom: 0.75rem;
-}
-
-.blog-card .card-text {
-  font-size: 0.95rem;
-  color: #555;
-}
-
-.blog-card .btn {
-  border-radius: 8px;
-  padding: 0.4rem 1rem;
-}
-
-/* ===================== */
-/* Responsive Adjustments */
-/* ===================== */
-@media (max-width: 992px) {
-  #blog h1 {
-    font-size: 2rem;
-  }
-  #blog h3 {
-    font-size: 1.5rem;
-  }
-  .blog-card h5 {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 768px) {
-  #blog .row.mb-5 {
-    flex-direction: column;
-  }
-  #blog .row.mb-5 img {
-    margin-bottom: 1rem;
-    max-height: 300px;
-  }
-  #blog .row.mb-5 h2 {
-    font-size: 1.5rem;
-  }
-  .blog-card img,
-  .product-card img {
-    aspect-ratio: auto;   /* ✅ allow taller images on mobile */
-  }
-}
-
-@media (max-width: 576px) {
-  #blog h1 {
-    font-size: 1.75rem;
-  }
-  .blog-card h5 {
-    font-size: 0.95rem;
-  }
-  .blog-card .card-text {
-    font-size: 0.9rem;
-  }
-  .cta-box {
-    padding: 1.5rem;
-  }
-}
-/* ===================== */
-/* Responsive Product Grid */
-/* ===================== */
-@media (max-width: 767px) {
-  .product-card {
-    margin-bottom: 1.5rem;
-  }
-  .related-products .col-md-6,
-  .cta-box .col-md-6 {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-}
-/* ===================== */
-/* Responsive Layout Fixes */
-/* ===================== */
-@media (max-width: 767px) {
-  /* Blog post cards */
-  #blog .col-md-6,
-  #blog .col-lg-4 {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-
-  /* Amazon product cards */
-  .related-products .col-md-6,
-  .cta-box .col-md-6 {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-
-  /* Add some spacing */
-  .product-card,
-  #blog .card {
-    margin-bottom: 1.5rem;
-  }
-}
-/* Featured Post Mobile Fix */
-@media (max-width: 767px) {
-  #blog .row.mb-5 .col-md-6 {
-    flex: 0 0 100%;
-    max-width: 100%;
-    text-align: center;
-    margin-bottom: 1.5rem;
-  }
-
-  #blog .row.mb-5 img {
-    max-height: 280px;
-    object-fit: cover;
-  }
-}
-/* Pinterest CTA button */
-.btn-pinterest {
-  display: inline-block;
-  background-color: #E60023; /* Pinterest Red */
-  color: #fff !important;
-  font-weight: 600;
-  padding: 0.6rem 1.2rem;
-  border-radius: 8px;
-  transition: background-color 0.3s ease;
-  text-decoration: none;
-}
-
-.btn-pinterest:hover {
-  background-color: #c10f1c;
-  color: #fff !important;
-}
-/* Post Content Images */
+/* ----------------
+   Post Content Media
+------------------- */
 .post-content img {
-  max-width: 100%;        /* never overflow the container */
-  height: auto;           /* keep correct aspect ratio */
-  display: block;         /* removes inline gap below */
-  margin: 1.5rem auto;    /* center and add space around */
-  border-radius: 10px;    /* match your theme style */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* subtle shadow */
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.5rem auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
+
 .post-content figcaption {
   font-size: 0.95rem;
   color: #555;
@@ -441,55 +231,55 @@ footer .list-inline-item a:hover {
   margin-bottom: 1.5rem;
   font-style: italic;
 }
-/* Post Content Links */
+
 .post-content a {
-  color: #003580;             /* your brand navy blue */
-  font-weight: 600;           /* make them stand out */
-  text-decoration: none;      /* remove default underline */
-  border-bottom: 2px solid rgba(0,53,128,0.2); /* subtle underline effect */
+  color: #003580;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 2px solid rgba(0,53,128,0.2);
   transition: color 0.3s ease, border-color 0.3s ease;
 }
-
 .post-content a:hover {
-  color: #FF6C00;             /* your accent orange */
+  color: #FF6C00;
   border-bottom-color: #FF6C00;
-  text-decoration: none;      /* keep it clean */
 }
-/* ================================
-   Categories & Tags Styling
-   ================================ */
 
-/* Categories (top of post) */
-.post-categories .badge {
-  background-color: #003580;   /* Deep blue */
-  color: #fff;
-  font-size: 0.85rem;
+/* ----------------
+   Pinterest CTA
+------------------- */
+.btn-pinterest {
+  display: inline-block;
+  background-color: #E60023;
+  color: #fff !important;
   font-weight: 600;
-  text-transform: uppercase;
-  border-radius: 20px;
-  padding: 0.4rem 0.9rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
   transition: background-color 0.3s ease;
 }
-
-.post-categories .badge:hover {
-  background-color: #FF6C00;   /* Accent orange */
-  text-decoration: none;
-  color: #fff;
+.btn-pinterest:hover {
+  background-color: #c10f1c;
+  color: #fff !important;
 }
 
-/* Tags (bottom of post) */
-.post-tags .badge {
-  background-color: #f1f1f1;
-  color: #333;
-  font-size: 0.8rem;
-  font-weight: 500;
-  border-radius: 12px;
-  padding: 0.3rem 0.7rem;
-  transition: all 0.3s ease;
+/* ----------------
+   Responsive Fixes
+------------------- */
+@media (max-width: 992px) {
+  #blog h1 { font-size: 2rem; }
+  #blog h3 { font-size: 1.5rem; }
+  .blog-card h5 { font-size: 1rem; }
 }
 
-.post-tags .badge:hover {
-  background-color: #FF6C00;
-  color: #fff;
-  text-decoration: none;
+@media (max-width: 768px) {
+  #blog .row.mb-5 { flex-direction: column; }
+  #blog .row.mb-5 img { margin-bottom: 1rem; max-height: 300px; }
+  #blog .row.mb-5 h2 { font-size: 1.5rem; }
+  .blog-card img, .product-card img { aspect-ratio: auto; }
+}
+
+@media (max-width: 576px) {
+  #blog h1 { font-size: 1.75rem; }
+  .blog-card h5 { font-size: 0.95rem; }
+  .blog-card .card-text { font-size: 0.9rem; }
+  .cta-box { padding: 1.5rem; }
 }
