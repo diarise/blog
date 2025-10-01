@@ -6,11 +6,13 @@ categories:
   - France
   - Europe
   - City Travel
+  - Romance
 tags:
   - Paris
   - Montmartre
   - Sunrise
   - Travel Diary
+  - Romance
 image: /assets/images/uploads/pexels-robert-stokoe-105922-3628858.jpg
 excerpt: Montmartre before sunrise feels like a secret only a few know. I
   climbed the quiet hill, coffee in hand, to watch Paris wake up in shades of
