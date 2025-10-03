@@ -58,6 +58,8 @@ Portugal combines affordability with world-class experiences. Its warm hospitali
 
 For those inspired to explore Portugal, it’s easy to [get a travel quote](https://forms.gle/ZBeponc75D1hfRBN7) and begin planning a trip that blends culture, history, and natural beauty.
 
+> #### *A journey is best measured in friends, rather than miles.* — Tim Cahill
+
 ### **Final Reflection**
 
 What makes Portugal special is its balance. It’s a country where the pace slows down, where history feels alive, and where every meal, sunset, and stroll feels like a moment worth remembering. For travelers in search of both rest and discovery, Portugal is a destination that offers it all.
