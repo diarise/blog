@@ -5,7 +5,6 @@ date: 2025-10-02T14:32:00.000-07:00
 categories:
   - Portugal
   - History
-  - Costlines
   - Culture
   - Travel
 tags:
