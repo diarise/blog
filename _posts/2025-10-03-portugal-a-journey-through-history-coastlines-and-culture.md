@@ -20,8 +20,6 @@ excerpt: Portugal is one of Europe’s most inviting destinations, offering gold
   to the cliffs of the Algarve, it’s a country full of color, flavor, and warm
   welcomes.
 ---
-
-
 Portugal has become one of Europe’s most talked-about destinations, and for good reason. It offers a mix of stunning beaches, rich history, and a relaxed pace that makes travelers want to linger. From the colorful tiles of Lisbon to the dramatic cliffs of the Algarve, Portugal is full of charm and variety.
 
 ### **Lisbon: A City of Light and Tradition**
@@ -58,7 +56,7 @@ Both islands offer a slower pace of life and some of the most breathtaking lands
 
 Portugal combines affordability with world-class experiences. Its warm hospitality, mild climate, and diverse landscapes make it a favorite for families, couples, and solo travelers alike. Whether exploring Lisbon’s streets, relaxing by the sea in the Algarve, tasting wine in Porto, or hiking through the Azores, Portugal has something for everyone.
 
-For those inspired to explore Portugal, it’s easy to[ get a travel quote](https://voyagebyluna.com/contact) and begin planning a trip that blends culture, history, and natural beauty.
+For those inspired to explore Portugal, it’s easy to [get a travel quote](https://forms.gle/ZBeponc75D1hfRBN7) and begin planning a trip that blends culture, history, and natural beauty.
 
 ### **Final Reflection**
 
