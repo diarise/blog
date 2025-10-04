@@ -103,5 +103,24 @@
 <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  <!-- 🔥 Smart Redirect for Tags & Categories -->
+<script>
+(function() {
+  const path = window.location.pathname;
+
+  // Match /Tags/... or /Categories/... (case-insensitive)
+  const match = path.match(/^\/(Tags|tags|Categories|categories)[\/-]([A-Za-z0-9\-\_]+)/);
+  if (match) {
+    const section = match[1].toLowerCase().replace(/s$/, ''); // "tags" → "tag"
+    const slug = match[2].toLowerCase();
+
+    // Redirect to clean, correct path
+    const correctUrl = `${window.location.origin}/${section}s/${slug}/`;
+    if (window.location.href !== correctUrl) {
+      window.location.replace(correctUrl);
+    }
+  }
+})();
+</script>
 </body>
 </html>
