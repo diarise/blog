@@ -7,7 +7,35 @@
 
   <!-- ✅ SEO Tags -->
   {% seo %}
-
+{% if page.layout == "post" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "{{ page.title | escape }}",
+  "image": ["{{ page.image | absolute_url }}"],
+  "author": {
+    "@type": "Person",
+    "name": "{{ site.author.name }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Voyage By Luna",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ site.logo | absolute_url }}"
+    }
+  },
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "dateModified": "{{ page.last_modified_at | default: page.date | date_to_xmlschema }}",
+  "description": "{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ page.url | absolute_url }}"
+  }
+}
+</script>
+{% endif %}
   <!-- ✅ Styles -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
