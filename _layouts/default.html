@@ -5,47 +5,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title }} | {{ site.title }}</title>
 
-  <!-- Main CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <!-- Font Awesome (latest stable CDN) -->
-{% seo %}   <!-- requires jekyll-seo-tag (you already have it in plugins) -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://voyagebyluna.com/styles.css"> <!-- your main website styles -->
-  <link rel="stylesheet" href="{{ "/assets/css/blog.css" | relative_url }}">
-  {% if page.permalink %}
-  <link rel="canonical" href="{{ site.url }}{{ page.permalink | downcase }}">
-{% endif %}
-  <!-- 🔥 Open Graph Meta -->
-{% if page.layout == "post" %}
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="{{ page.title | escape }}">
-  <meta property="og:description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 150 }}">
-  <meta property="og:url" content="{{ page.url | absolute_url }}">
-  {% if page.image %}
-    <meta property="og:image" content="{{ page.image | absolute_url }}">
-  {% endif %}
-{% else %}
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="{{ site.title | escape }}">
-  <meta property="og:description" content="{{ site.description | escape }}">
-  <meta property="og:url" content="{{ site.url }}">
-  {% if site.logo %}
-    <meta property="og:image" content="{{ site.logo | absolute_url }}">
-  {% endif %}
-{% endif %}
+  <!-- ✅ SEO Tags -->
+  {% seo %}
 
-<!-- 🔥 Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@voyagebyluna">
-<meta name="twitter:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}">
-<meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 150 }}{% else %}{{ site.description | escape }}{% endif %}">
-{% if page.image %}
-  <meta name="twitter:image" content="{{ page.image | absolute_url }}">
-{% endif %}
+  <!-- ✅ Styles -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://voyagebyluna.com/styles.css">
+  <link rel="stylesheet" href="{{ "/assets/css/blog.css" | relative_url }}">
+
+  <!-- ✅ Canonical URL for SEO -->
+  {% if page.permalink %}
+    <link rel="canonical" href="{{ site.url }}{{ page.permalink | downcase }}">
+  {% endif %}
+
+  <!-- ✅ Open Graph Meta -->
+  {% if page.layout == "post" %}
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="{{ page.title | escape }}">
+    <meta property="og:description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 150 }}">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    {% if page.image %}
+      <meta property="og:image" content="{{ page.image | absolute_url }}">
+    {% endif %}
+  {% else %}
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ site.title | escape }}">
+    <meta property="og:description" content="{{ site.description | escape }}">
+    <meta property="og:url" content="{{ site.url }}">
+    {% if site.logo %}
+      <meta property="og:image" content="{{ site.logo | absolute_url }}">
+    {% endif %}
+  {% endif %}
+
+  <!-- ✅ Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@voyagebyluna">
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}">
+  <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 150 }}{% else %}{{ site.description | escape }}{% endif %}">
+  {% if page.image %}
+    <meta name="twitter:image" content="{{ page.image | absolute_url }}">
+  {% endif %}
 </head>
+
 <body>
 
-  <!-- Navbar copied from main site -->
+  <!-- ✅ Navbar -->
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-no-opacity" id="mainHeader">
       <a class="navbar-brand" href="https://voyagebyluna.com">
@@ -72,58 +77,60 @@
     {{ content }}
   </main>
 
-  <!-- Footer copied from main site -->
-
-<footer class="bg-light text-light py-4">
+  <!-- ✅ Footer -->
+  <footer class="bg-light text-light py-4">
     <div class="container">
-        <div class="row">
-            <!-- Logo Section -->
-            <div class="col-md-4 text-center mb-4">
-                <img src="https://voyagebyluna.com/images/logo.png" alt="Logo Voyage By Luna" class="img-fluid" style="max-width: 150px;">
-            </div>
+      <div class="row">
+        <!-- Logo -->
+        <div class="col-md-4 text-center mb-4">
+          <img src="https://voyagebyluna.com/images/logo.png" alt="Logo Voyage By Luna" class="img-fluid" style="max-width: 150px;">
+        </div>
 
-            <!-- Contact and Social Media Section -->
-            <div class="col-md-4 text-center">
-                
-                        <h5 class="text-uppercase">Contact Us</h5>
-                        <p>Email: soukeyna@voyagebyluna.com <br> Phone: +1 (424) 279 0200</p>
-                        <p>&copy; {{ site.time | date: "%Y" }} Voyage By Luna. All rights reserved.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <h5 class="text-uppercase">Follow Us</h5>
-                        <ul class="list-inline">
-                            <li class="list-inline-item"><a href="https://www.facebook.com/VoyageByLuna" target="_blank"><i class="fab fa-facebook fa-2x"></i></a></li>
-                            <li class="list-inline-item"><a href="https://twitter.com/voyagebyluna" target="_blank"><i class="fab fa-twitter fa-2x"></i></a></li>
-                            <li class="list-inline-item"><a href="https://www.instagram.com/voyagebyluna/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a></li>
-                            <li class="list-inline-item"><a href="https://www.linkedin.com/company/voyage-by-luna/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></li>
-                            <li class="list-inline-item"><a href="https://www.pinterest.com/VoyageByLuna/" target="_blank"><i class="fab fa-pinterest fa-2x"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-    
-</footer>
-<script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+        <!-- Contact -->
+        <div class="col-md-4 text-center">
+          <h5 class="text-uppercase">Contact Us</h5>
+          <p>Email: soukeyna@voyagebyluna.com <br> Phone: +1 (424) 279 0200</p>
+          <p>&copy; {{ site.time | date: "%Y" }} Voyage By Luna. All rights reserved.</p>
+        </div>
+
+        <!-- Social -->
+        <div class="col-md-4">
+          <h5 class="text-uppercase">Follow Us</h5>
+          <ul class="list-inline">
+            <li class="list-inline-item"><a href="https://www.facebook.com/VoyageByLuna" target="_blank"><i class="fab fa-facebook fa-2x"></i></a></li>
+            <li class="list-inline-item"><a href="https://twitter.com/voyagebyluna" target="_blank"><i class="fab fa-twitter fa-2x"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.instagram.com/voyagebyluna/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.linkedin.com/company/voyage-by-luna/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.pinterest.com/VoyageByLuna/" target="_blank"><i class="fab fa-pinterest fa-2x"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ✅ Pinterest SDK -->
+  <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+
+  <!-- ✅ Core JS -->
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
-  <!-- 🔥 Smart Redirect for Tags & Categories -->
-<script>
-(function() {
-  const path = window.location.pathname;
 
-  // Match /Tags/... or /Categories/... (case-insensitive)
-  const match = path.match(/^\/(Tags|tags|Categories|categories)[\/-]([A-Za-z0-9\-\_]+)/);
-  if (match) {
-    const section = match[1].toLowerCase().replace(/s$/, ''); // "tags" → "tag"
-    const slug = match[2].toLowerCase();
+  <!-- ✅ Smart Redirect for Tags & Categories -->
+  <script>
+  (function() {
+    const path = window.location.pathname.toLowerCase();
 
-    // Redirect to clean, correct path
-    const correctUrl = `${window.location.origin}/${section}s/${slug}/`;
-    if (window.location.href !== correctUrl) {
-      window.location.replace(correctUrl);
+    // Normalize URLs like /categories-travel/ → /categories/travel/
+    const match = path.match(/^\/(categories|tags)[-\/]([a-z0-9\-\_]+)/);
+    if (match) {
+      const section = match[1];
+      const slug = match[2];
+      const correctUrl = `${window.location.origin}/${section}/${slug}/`;
+      if (window.location.href.toLowerCase() !== correctUrl) {
+        window.location.replace(correctUrl);
+      }
     }
-  }
-})();
-</script>
+  })();
+  </script>
 </body>
 </html>
