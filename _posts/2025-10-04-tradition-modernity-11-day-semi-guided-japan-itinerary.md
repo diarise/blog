@@ -39,18 +39,11 @@ Spend your first evening strolling the lively streets, sampling local snacks, or
 Meet your guide in Shinjuku and set out on a full-day tour of Tokyo’s must-see attractions:
 
 * 🌳 **Meiji Jingu Shrine** — A peaceful Shinto shrine surrounded by lush forest.
-
 * 👑 Stop at the **Imperial Palace**, the heart of Tokyo’s history.
-
 * 🛕 **Asakusa District & Senso-ji Temple** — Tokyo’s oldest temple and the famous Nakamise shopping street.
-
 * 🍵 Enjoy a **matcha tea tasting** and traditional Japanese lunch.
-
 * 🌆 Soar up the **Tokyo Skytree** for panoramic skyline views.
-
 * 🚤 End the day with a **Tokyo Bay river cruise** to Odaiba Island.
-
-
 
 Overnight in [Tokyo](https://exoticca.com/us/cities/asia/18108-tradition-modernity-semi-guided-japan?advisor_token=soukeyna-traoredia-0195b832-d5eb-7350-a7a0-e70acf9266a0).
 
@@ -65,11 +58,8 @@ Climb to the Fifth Station for stunning views, enjoy lunch in a ninja-themed vil
 This free day is ideal for discovering Tokyo’s neighborhoods:
 
 * 🎮 **Akihabara** for anime, electronics, and gaming.
-
 * 🛍 **Shibuya** for trendy shops, the famous crossing, and vibrant nightlife.
-
 * 🍜 **Tsukiji Outer Market** for street food and sushi.
-
 
 **Japan Travel Tip:** Purchase a prepaid Suica or Pasmo card to move easily around the city by metro and train.
 
@@ -84,14 +74,9 @@ In the evening, explore **Gion**, the famous Geisha district. Visit cozy **izaka
 Today’s guided tour covers Kyoto’s cultural treasures:
 
 * ⛩ **Fushimi Inari Shrine** — Walk through thousands of red torii gates.
-
 * 🏞 **Kiyomizu-dera Temple**, a UNESCO World Heritage site.
-
 * ✨ **Kinkaku-ji (Golden Pavilion)** — A temple covered in gold leaf.
-
 * 🎋 **Arashiyama Bamboo Grove**, one of Japan’s most photographed spots.
-
-
 
 Lunch is included. Spend your evening wandering through traditional streets or sipping matcha in a local tea house.
 
@@ -106,12 +91,8 @@ Stroll through **Kuromon Market** to taste takoyaki (octopus balls) and street e
 Enjoy Osaka independently with your metro pass:
 
 * 🏯 **Osaka Castle** — A historical landmark surrounded by gardens.
-
 * 🛍 **Dotonbori** — Famous for bright neon signs, shopping, and delicious street food.
-
 * 🏙 Explore **Shinsaibashi** and other bustling districts.
-
-
 
 **Japan Travel Tip:** Osaka is known as “Japan’s Kitchen.” Don’t leave without trying okonomiyaki (savory pancake) and kushikatsu (deep-fried skewers).
 
@@ -127,16 +108,13 @@ Planning a trip to Japan can feel overwhelming—language barriers, train passes
 
 As a professional **travel advisor**, I help you:
 
-
  ✅ Craft a customized itinerary based on your budget and interests
-
 
  ✅ Secure flights, accommodations, and tours with trusted partners
 
-
  ✅ Save time, avoid stress, and make your dream trip a reality
 
-Start with a [FREE Consultation Call](https://forms.gle/ZBeponc75D1hfRBN7), or visit [voyagebyluna.com](www.voyagebyluna.com) to get started.
+Start with a [FREE Consultation Call](https://forms.gle/ZBeponc75D1hfRBN7), or visit [voyagebyluna.com](https://voyagebyluna.com/) to get started.
 
 Whether you want a guided tour like this or a fully tailored Japan adventure, I’ll handle the details—you focus on the fun.
 
