@@ -1,5 +1,5 @@
 title: "Voyage By Luna Blog"
-description: "Travel stories, tips, and updates"
+description: "Authentic travel stories, destination guides, and personal journeys around the world."
 
 theme: minima
 
@@ -20,7 +20,7 @@ url: "https://blog.voyagebyluna.com"   # use your blog domain or https://voyageb
 baseurl: ""                            # keep blank if published at root of domain
 
 author:
-  name: "Soukeyna"
+  name: "Soukeyna Traoré-Dia"
   email: "soukeyna@voyagebyluna.com"
   bio: "Founder of Voyage By Luna — helping families & explorers discover unforgettable destinations."
 
@@ -36,3 +36,13 @@ collections:
     output: true
   tags:
     output: true
+
+# Default metadata for all posts
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      seo:
+        type: "article"
