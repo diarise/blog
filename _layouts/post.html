@@ -7,6 +7,7 @@ layout: default
     <div class="row justify-content-center">
       <div class="col-lg-8">
         <article class="post">
+
           <!-- 🔥 Title + Date + Categories -->
           <div class="text-center mb-5" style="margin-top: 3rem!important;">
             <h2 class="text-uppercase font-weight-bold">{{ page.title }}</h2>
@@ -15,8 +16,9 @@ layout: default
             {% if page.categories %}
               <div class="post-categories mt-2">
                 {% for category in page.categories %}
-                  {% assign cat_slug = category | downcase | strip | replace: ' ', '-' %}
-                  <a href="{{ '/categories/' | append: cat_slug | append: '/' | relative_url }}" class="badge mr-2">
+                  {% assign cat_slug = category | downcase | replace: " ", "-" %}
+                  <a href="{{ '/categories/' | append: cat_slug | append: '/' | relative_url }}" 
+                     class="badge badge-category mr-2">
                     {{ category }}
                   </a>
                 {% endfor %}
@@ -62,13 +64,14 @@ layout: default
             {{ content }}
           </div>
 
-          <!-- 🔥 Tags -->
+          <!-- 🔥 Tags Section -->
           {% if page.tags %}
             <div class="post-tags mb-4">
               <span class="font-weight-bold mr-2">Tags:</span>
               {% for tag in page.tags %}
-                {% assign tag_slug = tag | downcase | strip | replace: ' ', '-' %}
-                <a href="{{ '/tags/' | append: tag_slug | append: '/' | relative_url }}" class="badge mr-2">
+                {% assign tag_slug = tag | downcase | replace: " ", "-" %}
+                <a href="{{ '/tags/' | append: tag_slug | append: '/' | relative_url }}" 
+                   class="badge badge-tag mr-2">
                   {{ tag }}
                 </a>
               {% endfor %}
