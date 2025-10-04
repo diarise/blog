@@ -12,6 +12,9 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://voyagebyluna.com/styles.css"> <!-- your main website styles -->
   <link rel="stylesheet" href="{{ "/assets/css/blog.css" | relative_url }}">
+  {% if page.permalink %}
+  <link rel="canonical" href="{{ site.url }}{{ page.permalink | downcase }}">
+{% endif %}
   <!-- 🔥 Open Graph Meta -->
 {% if page.layout == "post" %}
   <meta property="og:type" content="article">
