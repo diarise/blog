@@ -1,32 +1,45 @@
 #!/usr/bin/env ruby
-require 'yaml'
 require 'fileutils'
+require 'yaml'
+require 'cgi'
+require 'unicode_normalize'
 
-# Directories for categories and tags
+# Paths
 categories_dir = "_categories"
 tags_dir = "_tags"
-
-# 🔥 Clean old category & tag pages (avoids dead links)
-FileUtils.rm_rf(Dir.glob("#{categories_dir}/*.md"))
-FileUtils.rm_rf(Dir.glob("#{tags_dir}/*.md"))
 
 FileUtils.mkdir_p(categories_dir)
 FileUtils.mkdir_p(tags_dir)
 
+# Helper: sanitize slugs safely
+def safe_slug(text)
+  return "" if text.nil?
+  text.unicode_normalize(:nfkd)           # Normalize accents (é → e)
+      .encode('ASCII', replace: '')       # Remove non-ASCII
+      .downcase
+      .strip
+      .gsub(/[’'`"“”]/, '')               # Remove quotes
+      .gsub(/[^a-z0-9\s_-]/, '')          # Only safe chars
+      .gsub(/\s+/, '-')                   # Replace spaces with dash
+      .gsub(/-+/, '-')                    # No double dashes
+end
+
 categories = []
 tags = []
 
-# 🔥 Loop through all posts to collect categories and tags
 Dir["_posts/*.{md,markdown}"].each do |post_file|
-  content = File.read(post_file)
+  # Rename file if it contains invalid chars
+  clean_name = safe_slug(File.basename(post_file, ".*"))
+  new_path = File.join("_posts", "#{clean_name}.md")
+  if new_path != post_file
+    FileUtils.mv(post_file, new_path)
+    post_file = new_path
+  end
 
-  # Extract YAML front matter
+  content = File.read(post_file)
   if content =~ /^(---\s*\n.*?\n?)^(---\s*$\n?)/m
     raw_frontmatter = $1
-
-    # Remove problematic date/time keys before parsing
     sanitized_frontmatter = raw_frontmatter.gsub(/^date:.*$/, '')
-
     frontmatter = YAML.safe_load(sanitized_frontmatter, aliases: true) || {}
 
     categories.concat(Array(frontmatter["categories"])) if frontmatter["categories"]
@@ -37,10 +50,12 @@ end
 categories.uniq!
 tags.uniq!
 
-# 🔥 Generate category pages
+# Generate category pages
 categories.each do |cat|
-  slug = cat.downcase.strip.gsub(" ", "-")
-  File.open("#{categories_dir}/#{slug}.md", "w") do |f|
+  slug = safe_slug(cat)
+  next if slug.empty?
+  filename = "#{categories_dir}/#{slug}.md"
+  File.open(filename, "w") do |f|
     f.puts("---")
     f.puts("layout: category")
     f.puts("title: \"#{cat}\"")
@@ -50,10 +65,12 @@ categories.each do |cat|
   end
 end
 
-# 🔥 Generate tag pages
+# Generate tag pages
 tags.each do |tag|
-  slug = tag.downcase.strip.gsub(" ", "-")
-  File.open("#{tags_dir}/#{slug}.md", "w") do |f|
+  slug = safe_slug(tag)
+  next if slug.empty?
+  filename = "#{tags_dir}/#{slug}.md"
+  File.open(filename, "w") do |f|
     f.puts("---")
     f.puts("layout: tag")
     f.puts("title: \"#{tag}\"")
@@ -63,4 +80,4 @@ tags.each do |tag|
   end
 end
 
-puts "✅ Done! Generated #{categories.size} categories and #{tags.size} tags"
+puts "✅ Generated #{categories.size} categories and #{tags.size} tags (with safe filenames)"
