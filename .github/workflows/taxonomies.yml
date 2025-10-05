@@ -20,12 +20,6 @@ jobs:
         with:
           ruby-version: 3.1
 
-      - name: Clean invalid files
-        run: |
-          find _posts -type f $begin:math:text$ -iname "*’*" -o -iname "*“*" -o -iname "*”*" -o -iname "*—*" $end:math:text$ -print -delete || true
-          find _categories -type f -size 0 -delete || true
-          find _tags -type f -size 0 -delete || true
-
       - name: Run taxonomy generator
         run: ruby _scripts/generate_taxonomies.rb
 
@@ -33,6 +27,6 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add _categories _tags _posts
-          git commit -m "Auto-clean + regenerate taxonomy pages" || echo "No changes to commit"
+          git add _categories _tags
+          git commit -m "Auto-generate category & tag pages" || echo "No changes to commit"
           git push
