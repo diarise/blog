@@ -1,0 +1,25 @@
+---
+layout: default # Inherit from your main default layout for site structure
+---
+
+<header class="post-header">
+  <h1 class="post-title p-name" itemprop="name headline">Archive for: {{ page.name | capitalize }}</h1>
+</header>
+
+<div class="post-content e-content" itemprop="articleBody">
+  <h2>Posts:</h2>
+
+  <ul>
+    {% assign posts = site.posts | sort: 'date' | reverse %}
+
+    {% for post in posts %}
+
+      {% if page.layout == 'tag' and post.tags contains page.name %}
+        <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a> ({{ post.date | date: "%Y-%m-%d" }})</li>
+      {% elsif page.layout == 'category' and post.categories contains page.name %}
+        <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a> ({{ post.date | date: "%Y-%m-%d" }})</li>
+      {% endif %}
+
+    {% endfor %}
+  </ul>
+</div>
