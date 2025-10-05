@@ -34,3 +34,9 @@ jobs:
           git add _categories _tags
           git commit -m "Auto-generate category & tag pages" || echo "No changes to commit"
           git push
+          
+- name: Run pre-cleanup
+  run: ruby _scripts/clean_posts.rb
+
+- name: Run taxonomy generator
+  run: ruby _scripts/generate_taxonomies.rb
