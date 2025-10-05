@@ -26,7 +26,16 @@ title: "Blog"
 
     <!-- Remaining Posts -->
     <div class="text-center mb-5" style="margin-top: 3rem!important;">
-      <h3 class="text-uppercase font-weight-bold">More Stories</h3>
+      <h2 class="mb-4 font-weight-bold">Explore More</h2>
+  <p class="text-muted mb-4">Browse all our stories by category or tag and discover new destinations.</p>
+  <div class="btn-group">
+    <a href="{{ '/categories/' | relative_url }}" class="btn btn-outline-primary btn-lg">
+      <i class="fas fa-folder-open mr-2"></i> Categories
+    </a>
+    <a href="{{ '/tags/' | relative_url }}" class="btn btn-outline-secondary btn-lg">
+      <i class="fas fa-tags mr-2"></i> Tags
+    </a>
+  </div>
     </div>
 
     <div class="row">
