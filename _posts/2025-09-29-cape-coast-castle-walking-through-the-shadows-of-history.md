@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Cape Coast Castle: Walking Through the Shadows of History"
-
+date: 2025-10-04T19:33:00.000-07:00
 categories:
   - Ghana
   - History
