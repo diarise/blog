@@ -2,31 +2,149 @@
 layout: default
 ---
 
-<article class="container py-5">
-  <header class="mb-4">
-    <h1>{{ page.title }}</h1>
-    <p class="text-muted">
-      {% if page.date %}{{ page.date | date: "%B %d, %Y" }}{% endif %}
-      {% if page.categories %}
-        • In 
-        {% for category in page.categories %}
-          <a href="{{ '/categories/' | append: category | slugify | append: '/' | relative_url }}">{{ category }}</a>{% unless forloop.last %}, {% endunless %}
-        {% endfor %}
-      {% endif %}
-    </p>
-  </header>
+<section id="single-post" class="py-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <article class="post">
 
-  <div class="post-content">
-    {{ content }}
+          <!-- 🔥 Title + Date + Categories -->
+          <div class="text-center mb-5" style="margin-top: 3rem!important;">
+            <h2 class="text-uppercase font-weight-bold">{{ page.title }}</h2>
+            <p class="text-muted">{{ page.date | date: "%B %d, %Y" }}</p>
+
+            {% if page.categories %}
+              <div class="post-categories mt-2">
+                {% for category in page.categories %}
+                  {% assign cat_slug = category | downcase | replace: " ", "-" %}
+                  <a href="{{ '/categories/' | append: cat_slug | append: '/' | relative_url }}" 
+                     class="badge badge-category mr-2">
+                    {{ category }}
+                  </a>
+                {% endfor %}
+              </div>
+            {% endif %}
+          </div>
+
+          <!-- 🔥 Featured Image or Gallery -->
+          {% if page.gallery %}
+            <div id="postGallery" class="carousel slide mb-4" data-ride="carousel">
+              <div class="carousel-inner">
+                {% for img in page.gallery %}
+                  <div class="carousel-item {% if forloop.first %}active{% endif %}">
+                    <img src="{{ img | relative_url }}" class="d-block w-100 rounded shadow-sm" alt="{{ page.title }} - {{ forloop.index }}">
+                  </div>
+                {% endfor %}
+              </div>
+              <a class="carousel-control-prev" href="#postGallery" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#postGallery" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          {% elsif page.image %}
+            <img src="{{ page.image | relative_url }}" class="img-fluid rounded shadow-sm mb-4" alt="{{ page.title }}">
+          {% endif %}
+
+          <!-- 🔥 Pinterest Save Button -->
+          <div class="pinterest-wrapper text-right mb-3">
+            <a href="https://pinterest.com/pin/create/button/?url={{ site.url }}{{ page.url }}&media={{ site.url }}{{ page.image }}&description={{ page.title | escape }}" 
+               target="_blank" 
+               rel="nofollow noopener" 
+               class="btn btn-pinterest">
+              📌 Save to Pinterest
+            </a>
+          </div>
+
+          <!-- 🔥 Post Body -->
+          <div class="post-content mb-5">
+            {{ content }}
+          </div>
+
+          <!-- 🔥 Tags Section -->
+          {% if page.tags %}
+            <div class="post-tags mb-4">
+              <span class="font-weight-bold mr-2">Tags:</span>
+              {% for tag in page.tags %}
+                {% assign tag_slug = tag | downcase | replace: " ", "-" %}
+                <a href="{{ '/tags/' | append: tag_slug | append: '/' | relative_url }}" 
+                   class="badge badge-tag mr-2">
+                  {{ tag }}
+                </a>
+              {% endfor %}
+            </div>
+          {% endif %}
+
+          <!-- 🔥 Social + Author -->
+          {% include share.html %}
+          {% include author.html %}
+
+          <!-- 🔥 Related Posts Section -->
+          <hr>
+          <div class="related-posts mb-4">
+            <h3 class="mb-4">You Might Also Like</h3>
+            <div class="row">
+              {% assign related = site.posts | where_exp: "p", "p.url != page.url" %}
+              {% for p in related limit:2 %}
+                <div class="col-md-6 mb-4">
+                  <div class="card h-100 shadow-sm related-card">
+                    {% if p.image %}
+                      <a href="{{ p.url }}">
+                        <img src="{{ p.image | relative_url }}" class="card-img-top" alt="{{ p.title }}">
+                      </a>
+                    {% endif %}
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        <a href="{{ p.url }}" class="text-dark">{{ p.title }}</a>
+                      </h5>
+                      <p class="card-text">{{ p.excerpt }}</p>
+                      <a href="{{ p.url }}" class="btn btn-outline-primary btn-sm">Read More</a>
+                    </div>
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+            <div class="text-center mt-3">
+              <a href="{{ "/" | relative_url }}" class="btn btn-primary">
+                ← Back to Blog
+              </a>
+            </div>
+          </div>
+
+          {% include newsletter.html %}
+          {% include cta.html %}
+
+          <!-- 🔥 Travel Store Section -->
+          <div class="cta-box text-center my-5 p-5 rounded shadow-sm" 
+               style="background: linear-gradient(135deg, rgba(255,108,0,0.08), rgba(0,53,128,0.06));">
+
+            <h3 class="mb-3 font-weight-bold">Travel Essentials Store</h3>
+            <p class="mb-5">Explore our curated Amazon storefront for gear, books, and accessories — handpicked to make your journeys easier and more enjoyable.</p>
+
+            <!-- Product Grid -->
+            <div class="row">
+              {% for product in site.data.products.products limit:3 %}
+                <div class="col-md-6 mb-4">
+                  {% include product-card.html 
+                    title=product.title 
+                    image=product.image 
+                    link=product.link 
+                    description=product.description %}
+                </div>
+              {% endfor %}
+            </div>
+
+            <div class="text-center mt-4">
+              <a href="https://www.amazon.com/shop/voyagebyluna" target="_blank" rel="nofollow noopener sponsored" class="btn btn-lg btn-primary">
+                Visit Full Amazon Store →
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
   </div>
-
-  {% if page.tags %}
-  <footer class="mt-5">
-    <p>Tags:
-      {% for tag in page.tags %}
-        <a href="{{ '/tags/' | append: tag | slugify | append: '/' | relative_url }}" class="badge badge-secondary">{{ tag }}</a>
-      {% endfor %}
-    </p>
-  </footer>
-  {% endif %}
-</article>
+</section>
