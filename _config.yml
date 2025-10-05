@@ -31,11 +31,11 @@ gallery:
   - /assets/images/g2.jpg
   - /assets/images/g3.jpg
 
-collections:
-  categories:
-    output: true
-  tags:
-    output: true
+# collections:
+#   categories:
+#     output: true
+#   tags:
+#     output: true
 
 # Default metadata for all posts
 defaults:
