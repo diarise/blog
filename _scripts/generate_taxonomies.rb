@@ -73,3 +73,4 @@ tags.each do |tag|
 end
 
 puts "✅ Successfully generated #{categories.size} categories and #{tags.size} tags."
+
