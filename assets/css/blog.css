@@ -321,3 +321,35 @@
 .hover-zoom:hover img {
   transform: scale(1.05);
 }
+/* === Category & Tag Index Styling === */
+#categories h1, #tags h1 {
+  color: #003580;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tag-badge {
+  background-color: rgba(0,53,128,0.08);
+  color: #003580;
+  font-size: 0.9rem;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.tag-badge:hover {
+  background-color: #003580;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.card img {
+  height: 200px;
+  object-fit: cover;
+}
