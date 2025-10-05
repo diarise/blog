@@ -10,34 +10,38 @@ minima:
 
 future: true
 
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-sitemap
-
-# site-wide (add if missing)
-url: "https://blog.voyagebyluna.com"   # use your blog domain or https://voyagebyluna.com if you prefer
-baseurl: ""                            # keep blank if published at root of domain
+url: "https://blog.voyagebyluna.com"   # Your blog domain
+baseurl: ""                            # Blank since it's root-level
 
 author:
   name: "Soukeyna Traoré-Dia"
   email: "soukeyna@voyagebyluna.com"
   bio: "Founder of Voyage By Luna — helping families & explorers discover unforgettable destinations."
-
-twitter_username: "voyagebyluna"   # optional, for share cards
+twitter_username: "voyagebyluna"
 
 gallery:
   - /assets/images/g1.jpg
   - /assets/images/g2.jpg
   - /assets/images/g3.jpg
 
-collections:
-  categories:
-    output: true
-  tags:
-    output: true
+# ✅ All plugins grouped properly
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-archives
 
-# Default metadata for all posts
+# ✅ Archives configuration
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layout: "archive"    # layout file (e.g. _layouts/archive.html)
+  permalinks:
+    category: "/categories/:name/"
+    tag: "/tags/:name/"
+
+# ✅ Default metadata for posts
 defaults:
   - scope:
       path: ""
