@@ -1,4 +1,4 @@
-name: Generate Taxonomies
+name: Clean & Generate Taxonomies
 
 on:
   push:
@@ -20,23 +20,20 @@ jobs:
         with:
           ruby-version: 3.1
 
-      # 🧹 Step 1: Run pre-cleanup to sanitize files and YAML frontmatter
-      - name: Run pre-cleanup
+      - name: Full Cleanup
         run: |
-          echo "🧹 Cleaning up posts before taxonomy generation..."
-          ruby _scripts/clean_posts.rb
+          echo "🧹 Running full cleanup script..."
+          ruby _scripts/full_cleanup.rb
 
-      # 🗂️ Step 2: Generate taxonomies (categories + tags)
-      - name: Run taxonomy generator
+      - name: Generate Taxonomies
         run: |
-          echo "🏷️ Generating taxonomy pages..."
+          echo "🏷️ Generating category & tag pages..."
           ruby _scripts/generate_taxonomies.rb
 
-      # 💾 Step 3: Commit and push changes
-      - name: Commit changes
+      - name: Commit & Push Changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add _categories _tags
-          git commit -m "🧩 Auto-clean and generate category & tag pages" || echo "No changes to commit"
+          git add _posts _categories _tags
+          git commit -m "🔧 Auto-clean and regenerate taxonomies" || echo "No changes to commit"
           git push
