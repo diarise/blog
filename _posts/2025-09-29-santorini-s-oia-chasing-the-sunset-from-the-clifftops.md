@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Santorini Oia: Chasing the Sunset from the Clifftops"
-date: 2025-09-29T15:27:00.000-07:00
+
 categories:
   - Greece
   - Romance
@@ -13,7 +13,7 @@ tags:
   - Greek Islands
   - Travel Romance
 image: /assets/images/uploads/pexels-pixabay-221532.jpg
-excerpt: Oia at sunset isn’t just a view — it’s a ritual, a collective pause
+excerpt: Oia at sunset isn't just a view — it's a ritual, a collective pause
   where strangers gather on the cliffs of Santorini to watch the sky catch fire.
 ---
 It began with a slow hum — voices drifting through narrow alleyways, sandals brushing against whitewashed stone, camera shutters clicking. By the time I reached the clifftops of \*\*Oia\*\*, the small village at the northern tip of Santorini, the air was buzzing with anticipation. Sunset here isn’t just a natural event. It’s a ceremony, a pilgrimage, a moment that binds hundreds of strangers together under the Aegean sky.

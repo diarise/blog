@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Tradition & Modernity: 11-Day Semi-Guided Japan Itinerary"
-date: 2025-10-04T15:40:00.000-07:00
+
 categories:
   - Travel
   - Vacation
@@ -13,8 +13,8 @@ tags:
   - Travel Itinerary
 image: /assets/images/uploads/japan.jpeg
 excerpt: >
-  If you’ve ever dreamed of visiting Japan, this 11-day semi-guided itinerary is
-  the perfect way to experience Tokyo, Kyoto, and Osaka—three of the country’s
+  If you've ever dreamed of visiting Japan, this 11-day semi-guided itinerary is
+  the perfect way to experience Tokyo, Kyoto, and Osaka—three of the country's
   most iconic destinations. From futuristic skylines to ancient temples, this
   journey blends culture, cuisine, and adventure into one unforgettable trip.
 ---

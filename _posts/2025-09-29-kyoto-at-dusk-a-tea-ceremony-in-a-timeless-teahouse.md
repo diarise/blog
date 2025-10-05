@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Kyoto at Dusk: A Tea Ceremony in a Timeless Teahouse"
-date: 2025-09-29T15:02:00.000-07:00
+
 categories:
   - Japan
   - Kyoto
@@ -14,7 +14,7 @@ tags:
 image: /assets/images/uploads/pexels-dsd-143941-1822605.jpg
 excerpt: >
   In the hushed heart of Kyoto, I slipped into a centuries-old teahouse and
-  experienced the grace of a traditional tea ceremony. It wasn’t just about tea
+  experienced the grace of a traditional tea ceremony. It wasn't just about tea
   — it was about stillness, presence, and stepping into another rhythm of life.
 ---
 I had wandered Kyoto’s narrow lanes before dusk, the kind where the wooden facades lean in close, and paper lanterns glow like small moons above sliding doors. The air carried a faint hint of incense and tatami mats — that subtle grassy sweetness that seems to belong only to Japan. My feet, a little sore from the cobblestones, slowed as I noticed a discreet sign: a teahouse, older than most cities I had known.

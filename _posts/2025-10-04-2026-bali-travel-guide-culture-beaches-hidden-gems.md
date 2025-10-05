@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "2026 Bali Travel Guide: Culture, Beaches & Hidden Gems"
-date: 2025-10-04T12:04:00.000-07:00
+
 categories:
   - Indonesia
   - Bali
@@ -12,10 +12,10 @@ tags:
   - Island Adventure
   - Bali Guide
 image: /assets/images/uploads/bali-.png
-excerpt: Bali has a way of capturing hearts. Known as the “Island of the Gods,”
-  it’s a place where vibrant traditions blend seamlessly with breathtaking
+excerpt: Bali has a way of capturing hearts. Known as the 'Island of the Gods,'
+  it's a place where vibrant traditions blend seamlessly with breathtaking
   landscapes. Lush rice terraces stretch into the horizon, temple bells echo in
-  the distance, and waves roll gently along golden beaches. Whether you’re drawn
+  the distance, and waves roll gently along golden beaches. Whether you're drawn
   by culture, nature, wellness, or adventure, Bali remains one of the top
   destinations to visit in 2026.
 ---

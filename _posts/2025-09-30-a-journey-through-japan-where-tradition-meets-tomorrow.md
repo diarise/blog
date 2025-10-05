@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "A Journey Through Japan: Where Tradition Meets Tomorrow"
-date: 2025-09-30T11:50:00.000-07:00
+
 categories:
   - Travel
   - Japan
@@ -14,9 +14,9 @@ tags:
   - Vacation
   - Japan
 image: /assets/images/uploads/kanto-tokyo-and-mt-fuji.jpg
-excerpt: Wander through Japan’s bustling streets and serene temples, tasting,
+excerpt: Wander through Japan's bustling streets and serene temples, tasting,
   smelling, and feeling the contrasts of a country that balances ancient
-  traditions with futuristic energy. A traveler’s reflection on moments that
+  traditions with futuristic energy. A traveler's reflection on moments that
   linger long after the trip ends.
 ---
 Japan feels like a place where two worlds intertwine — the futuristic rhythm of neon-lit cities and the quiet grace of centuries-old temples. From bustling Tokyo crossings to Kyoto’s poetic landscapes, every moment is layered with sights, sounds, and flavors that linger long after the journey ends.

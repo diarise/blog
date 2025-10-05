@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Portugal: A Journey Through History, Coastlines, and Culture"
-date: 2025-10-02T14:32:00.000-07:00
+
 categories:
   - Portugal
   - History
@@ -14,9 +14,9 @@ tags:
   - Lisbon
   - Porto
 image: /assets/images/uploads/p.png
-excerpt: Portugal is one of Europe’s most inviting destinations, offering golden
-  beaches, historic cities, and charming villages. From Lisbon’s cobbled streets
-  to the cliffs of the Algarve, it’s a country full of color, flavor, and warm
+excerpt: Portugal is one of Europe's most inviting destinations, offering golden
+  beaches, historic cities, and charming villages. From Lisbon's cobbled streets
+  to the cliffs of the Algarve, it's a country full of color, flavor, and warm
   welcomes.
 ---
 Portugal has become one of Europe’s most talked-about destinations, and for good reason. It offers a mix of stunning beaches, rich history, and a relaxed pace that makes travelers want to linger. From the colorful tiles of Lisbon to the dramatic cliffs of the Algarve, Portugal is full of charm and variety.
