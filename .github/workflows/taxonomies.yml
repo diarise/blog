@@ -20,15 +20,14 @@ jobs:
         with:
           ruby-version: 3.1
 
+      - name: Prebuild Safety Check
+        run: ruby _scripts/prebuild_safety_check.rb
+
       - name: Full Cleanup
-        run: |
-          echo "🧹 Running full cleanup script..."
-          ruby _scripts/full_cleanup.rb
+        run: ruby _scripts/full_cleanup.rb
 
       - name: Generate Taxonomies
-        run: |
-          echo "🏷️ Generating category & tag pages..."
-          ruby _scripts/generate_taxonomies.rb
+        run: ruby _scripts/generate_taxonomies.rb
 
       - name: Commit & Push Changes
         run: |
