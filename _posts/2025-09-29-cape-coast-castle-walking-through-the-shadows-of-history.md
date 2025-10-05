@@ -1,11 +1,12 @@
 ---
 layout: post
 title: "Cape Coast Castle: Walking Through the Shadows of History"
-date: 2025-10-04T23:20:00.000-07:00
+date: 2025-10-04T23:24:00.000-07:00
 categories:
   - Ghana
   - History
   - Heritage
+  - Africa
 tags:
   - Cape Coast
   - Slave Trade
