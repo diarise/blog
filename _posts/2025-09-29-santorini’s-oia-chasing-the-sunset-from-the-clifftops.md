@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Santorini’s Oia: Chasing the Sunset from the Clifftops"
+title: "Santorini Oia: Chasing the Sunset from the Clifftops"
 date: 2025-09-29T15:27:00.000-07:00
 categories:
   - Greece
