@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "2026 Bali Travel Guide: Culture, Beaches & Hidden Gems"
-
+date: 2025-10-05T18:11:00.000-07:00
 categories:
   - Indonesia
   - Bali
@@ -11,6 +11,7 @@ tags:
   - Bali Travel
   - Island Adventure
   - Bali Guide
+  - Asia
 image: /assets/images/uploads/bali-.png
 excerpt: Bali has a way of capturing hearts. Known as the 'Island of the Gods,'
   it's a place where vibrant traditions blend seamlessly with breathtaking
