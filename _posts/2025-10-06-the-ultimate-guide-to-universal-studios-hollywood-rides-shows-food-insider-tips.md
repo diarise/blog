@@ -67,7 +67,7 @@ These character moments are scattered throughout the day, so you don’t need to
 
 Universal’s dining scene has grown significantly. In addition to classics like **Three Broomsticks** and Springfield’s Krusty Burger, new spots include **Power Up Café** outside Super Nintendo World, offering quick themed snacks. **Raising Cane’s** is under construction at CityWalk, replacing Dongpo Kitchen, and **Slice House by Tony Gemignani** is expected in summer 2025. Fans of desserts can visit **Hello Kitty & Friends Café** or **Toothsome Chocolate Emporium & Savory Feast Kitchen** for full meals and creative treats.
 
-The **Toadstool Café** inside Super Nintendo World remains a popular choice, but reservations through the app are recommended to avoid long lines.
+The **Toadstool Café** inside Super Nintendo World remains a popular choice, but reservations through the app are recommended to avoid long lines. :)
 
 ![](/assets/images/uploads/screenshot-2025-10-06-at-2.33.13 pm.png)
 
