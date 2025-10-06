@@ -1,3 +1,31 @@
 ---
-layout: category
+layout: default
+title: "Browse by Categories"
+permalink: /categories/
 ---
+
+<section class="categories-list container">
+  <h1>Browse by Categories</h1>
+  <p>Explore stories by theme, region, and travel style.</p>
+
+  <ul class="categories-grid">
+    {% assign categories = site.categories | sort %}
+    {% for category in categories %}
+      <li>
+        <a href="{{ '/blog/' | absolute_url }}?category={{ category[0] | uri_escape }}" class="category-link">
+          {{ category[0] | capitalize }} <span>({{ category[1].size }})</span>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<style>
+.categories-list { text-align:center; padding:3rem 1rem; }
+.categories-list h1 { font-size:2rem; margin-bottom:.5rem; }
+.categories-list p { color:#666; margin-bottom:2rem; }
+.categories-grid { list-style:none; display:flex; flex-wrap:wrap; justify-content:center; gap:.75rem; padding:0; }
+.category-link { display:inline-block; background:#f3f3f3; padding:.5rem 1rem; border-radius:25px;
+                 text-decoration:none; color:#333; transition:.3s; }
+.category-link:hover { background:#06d6a0; color:#fff; }
+</style>
