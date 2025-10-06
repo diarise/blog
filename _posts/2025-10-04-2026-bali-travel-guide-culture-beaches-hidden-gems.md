@@ -7,6 +7,7 @@ categories:
   - Bali
   - Travel
   - Guide
+  - Asia
 tags:
   - Bali Travel
   - Island Adventure
