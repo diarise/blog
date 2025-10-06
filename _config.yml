@@ -26,21 +26,11 @@ gallery:
   - /assets/images/g2.jpg
   - /assets/images/g3.jpg
 
+# ✅ Plugins list - JEKILL-ARCHIVES REMOVED
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-archives
-
-jekyll-archives:
-  enabled:
-    - categories
-    - tags
-  layout: "archive"
-  permalinks:
-    # 🌟 CRITICAL FIX: Forces .html extension
-    category: "/categories/:name.html"
-    tag: "/tags/:name.html"
 
 defaults:
   - scope:
