@@ -23,6 +23,67 @@ title: "Blog"
         <a href="{{ featured.url }}" class="btn btn-primary mt-2">Read More</a>
       </div>
     </div>
+    
+<!-- test tags and categories -->
+<section class="browse-topics container">
+  <h2>Browse Topics</h2>
+  <p>Find inspiration by exploring our most popular categories and tags.</p>
+
+  <div class="topics-buttons">
+    <a href="/categories/" class="btn-topic">Explore Categories</a>
+    <a href="/tags/" class="btn-topic alt">Discover Tags</a>
+  </div>
+</section>
+
+<style>
+.browse-topics {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: #fafafa;
+  border-radius: 12px;
+  margin: 3rem auto;
+  max-width: 900px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+.browse-topics h2 {
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: .5rem;
+}
+.browse-topics p {
+  color: #666;
+  margin-bottom: 2rem;
+}
+.topics-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.btn-topic {
+  background: #06d6a0;
+  color: white;
+  padding: .8rem 1.8rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: .3s;
+}
+.btn-topic:hover {
+  background: #118ab2;
+  transform: translateY(-2px);
+}
+.btn-topic.alt {
+  background: #ffd166;
+  color: #333;
+}
+.btn-topic.alt:hover {
+  background: #ef476f;
+  color: #fff;
+}
+</style>
+<!-- end test tags and categories -->
+    
 
     <!-- Remaining Posts -->
     <div class="text-center mb-5" style="margin-top: 3rem!important;">
