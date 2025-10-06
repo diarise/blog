@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "2026 Bali Travel Guide: Culture, Beaches & Hidden Gems"
-date: 2025-10-05T18:11:00.000-07:00
+date: 2025-10-05T19:49:00.000-07:00
 categories:
   - Indonesia
   - Bali
