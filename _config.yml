@@ -8,6 +8,8 @@ minima:
   custom_css:
     - /assets/css/custom.css
 
+timezone: America/Los_Angeles
+
 future: true
 
 url: "https://blog.voyagebyluna.com"   # Your blog domain
