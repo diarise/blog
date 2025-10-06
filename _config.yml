@@ -26,7 +26,6 @@ gallery:
   - /assets/images/g2.jpg
   - /assets/images/g3.jpg
 
-# ✅ Plugins list - JEKILL-ARCHIVES REMOVED
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
