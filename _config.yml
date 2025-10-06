@@ -12,8 +12,8 @@ timezone: America/Los_Angeles
 
 future: true
 
-url: "https://blog.voyagebyluna.com"   # Your blog domain
-baseurl: ""                            # Blank since it's root-level
+url: "https://blog.voyagebyluna.com"
+baseurl: ""
 
 author:
   name: "Soukeyna Traoré-Dia"
@@ -26,25 +26,22 @@ gallery:
   - /assets/images/g2.jpg
   - /assets/images/g3.jpg
 
-# ✅ All plugins grouped properly
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-archives
 
-# ✅ Archives configuration - CRITICAL FIX APPLIED HERE
 jekyll-archives:
   enabled:
     - categories
     - tags
-  layout: "archive"    # layout file (_layouts/archive.html)
+  layout: "archive"
   permalinks:
-    # 🌟 NEW: Forces .html extension instead of trailing slash
+    # 🌟 CRITICAL FIX: Forces .html extension
     category: "/categories/:name.html"
     tag: "/tags/:name.html"
 
-# ✅ Default metadata for posts
 defaults:
   - scope:
       path: ""
