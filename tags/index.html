@@ -16,7 +16,7 @@ description: Find travel inspiration by topic — from city escapes to cultural 
       {% assign sorted_tags = site.tags | sort %}
       {% for tag in sorted_tags %}
         {% assign tag_name = tag[0] %}
-        <a href="{{ '/tags/' | append: tag_name | downcase | append: '/' | relative_url }}" 
+        <a href="{{ '/tags/' | append: tag_name | slugify | append: '/' | relative_url }}" 
            class="badge badge-lg tag-badge m-2 px-3 py-2">
           {{ tag_name }} ({{ tag[1].size }})
         </a>
