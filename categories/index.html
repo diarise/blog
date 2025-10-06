@@ -6,41 +6,41 @@ description: Browse travel stories and guides by category — from culture and h
 ---
 
 <section id="categories" class="py-5">
-  <div class="container">
-    <h1 class="text-center mb-4 font-weight-bold">🌍 Explore by Category</h1>
-    <p class="text-center text-muted mb-5">
-      Choose a theme that inspires your next journey — from sun-kissed islands to cultural adventures and historic escapes.
-    </p>
+  <div class="container">
+    <h1 class="text-center mb-4 font-weight-bold">🌍 Explore by Category</h1>
+    <p class="text-center text-muted mb-5">
+      Choose a theme that inspires your next journey — from sun-kissed islands to cultural adventures and historic escapes.
+    </p>
 
-    <div class="row">
-      {% assign sorted_categories = site.categories | sort %}
-      {% for category in sorted_categories %}
-        {% assign category_name = category[0] %}
-        {% assign posts = category[1] %}
-        <div class="col-md-6 col-lg-4 mb-4 d-flex">
-          <div class="card shadow-sm border-0 flex-fill hover-zoom">
-            {% assign first_post = posts.first %}
-            {% if first_post.image %}
-              <a href="{{ '/categories/' | append: category_name | downcase | append: '/' | relative_url }}">
-                <img src="{{ first_post.image | relative_url }}" class="card-img-top rounded-top" alt="{{ category_name }}">
-              </a>
-            {% endif %}
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">
-                <a href="{{ '/categories/' | append: category_name | downcase | append: '/' | relative_url }}" class="text-dark text-uppercase">
-                  {{ category_name }}
-                </a>
-              </h5>
-              <p class="card-text text-muted mb-3">
-                {{ posts | size }} article{% if posts.size > 1 %}s{% endif %} in this category.
-              </p>
-              <div class="mt-auto">
-                <a href="{{ '/categories/' | append: category_name | downcase | append: '/' | relative_url }}" class="btn btn-outline-primary btn-sm">Explore →</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      {% endfor %}
-    </div>
-  </div>
+    <div class="row">
+      {% assign sorted_categories = site.categories | sort %}
+      {% for category in sorted_categories %}
+        {% assign category_name = category[0] %}
+        {% assign posts = category[1] %}
+        <div class="col-md-6 col-lg-4 mb-4 d-flex">
+          <div class="card shadow-sm border-0 flex-fill hover-zoom">
+            {% assign first_post = posts.first %}
+            {% if first_post.image %}
+                            <a href="{{ '/categories/' | append: category_name | slugify | append: '/' | relative_url }}">
+                <img src="{{ first_post.image | relative_url }}" class="card-img-top rounded-top" alt="{{ category_name }}">
+              </a>
+            {% endif %}
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">
+                                <a href="{{ '/categories/' | append: category_name | slugify | append: '/' | relative_url }}" class="text-dark text-uppercase">
+                  {{ category_name }}
+                </a>
+              </h5>
+              <p class="card-text text-muted mb-3">
+                {{ posts | size }} article{% if posts.size > 1 %}s{% endif %} in this category.
+              </p>
+              <div class="mt-auto">
+                                <a href="{{ '/categories/' | append: category_name | slugify | append: '/' | relative_url }}" class="btn btn-outline-primary btn-sm">Explore →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
 </section>
