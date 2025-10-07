@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<div class="archive">
+  <h1 class="archive-title">Posts in category: {{ page.category }}</h1>
+
+  <ul class="post-list">
+    {% assign category_posts = site.posts | where_exp: "post", "post.categories contains page.category" %}
+    {% for post in category_posts %}
+      <li>
+        <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+        <p class="post-meta">{{ post.date | date: "%B %d, %Y" }}</p>
+        <p>{{ post.excerpt }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
