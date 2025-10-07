@@ -3,11 +3,19 @@ layout: default
 ---
 
 <section class="archive-section py-5">
+
+  <!-- Full-width header wrapper (prevents header from being affected by .row flex) -->
+  <div class="archive-header-wrapper" style="width:100%; clear:both;">
+    <div class="container">
+      <div class="archive-header text-center mb-4">
+        <h1 class="archive-title mb-2" style="font-weight:700;">Category: {{ page.title }}</h1>
+        <p class="text-muted mb-0">Explore stories filed under <strong>{{ page.title }}</strong>.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main posts container -->
   <div class="container">
-    <header class="archive-header text-center mb-5 w-100" style="display:block; clear:both; padding-top: 2rem;">
-  <h1 class="archive-title mb-3" style="font-weight:700;">Category: {{ page.title }}</h1>
-  <p class="text-muted mb-0">Explore stories filed under <strong>{{ page.title }}</strong>.</p>
-</header>
 
     {% comment %}
       Try to get posts via site.categories first (fast & reliable).
@@ -22,7 +30,7 @@ layout: default
     {% endif %}
 
     {% if category_posts and category_posts.size > 0 %}
-      <div class="row">
+      <div class="row mt-3">
         {% for post in category_posts %}
           <div class="col-md-6 col-lg-4 mb-4">
             <div class="card h-100 shadow-sm">
