@@ -30,7 +30,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
-# ✅ Use collections for taxonomy auto-generation (Ruby workflow)
+# ✅ Use collections for taxonomy auto-generation (Ruby workflow) 
 collections:
   categories:
     output: true
