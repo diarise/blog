@@ -1,8 +1,7 @@
 ---
 layout: default
-title: Explore by Category
-permalink: /categories/
-description: Browse travel stories and guides by category — from culture and heritage to romance, adventure, and hidden gems around the world.
+title: "All Categories"
+permalink: /all-categories/
 ---
 
 <section id="categories" class="py-5">
