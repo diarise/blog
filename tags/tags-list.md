@@ -1,8 +1,7 @@
 ---
 layout: default
-title: Browse by Tag
-permalink: /tags/
-description: Find travel inspiration by topic — from city escapes to cultural adventures, heritage trails, romantic getaways, and more.
+title: "All Tags"
+permalink: /all-tags/
 ---
 
 <section id="tags" class="py-5">
