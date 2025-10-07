@@ -39,3 +39,9 @@ defaults:
       layout: "post"
       seo:
         type: "article"
+
+collections:
+  categories:
+    output: true
+  tags:
+    output: true
