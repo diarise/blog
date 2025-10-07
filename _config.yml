@@ -9,7 +9,6 @@ minima:
     - /assets/css/custom.css
 
 timezone: America/Los_Angeles
-
 future: true
 
 url: "https://blog.voyagebyluna.com"
@@ -30,16 +29,13 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-archives
-  
-jekyll-archives:
-  enabled:
-    - categories
-    - tags
-  layout: archive
-  permalinks:
-    category: /categories/:name/
-    tag: /tags/:name/
+
+# ✅ Use collections for taxonomy auto-generation (Ruby workflow)
+collections:
+  categories:
+    output: true
+  tags:
+    output: true
 
 defaults:
   - scope:
@@ -49,9 +45,3 @@ defaults:
       layout: "post"
       seo:
         type: "article"
-
-# collections:
-#   categories:
-#     output: true
-#   tags:
-#     output: true
