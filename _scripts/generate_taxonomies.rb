@@ -1,66 +1,58 @@
-#!/usr/bin/env ruby
+# _scripts/generate_taxonomies.rb
 require 'fileutils'
 require 'yaml'
-require 'date'
-require 'time'
+require 'unicode_normalize'
 
-# Paths
-categories_dir = "_categories"
-tags_dir = "_tags"
+POSTS_DIR = "_posts"
+CATEGORIES_DIR = "_categories"
+TAGS_DIR = "_tags"
 
-FileUtils.mkdir_p(categories_dir)
-FileUtils.mkdir_p(tags_dir)
+# Clean and recreate category/tag folders
+FileUtils.mkdir_p(CATEGORIES_DIR)
+FileUtils.mkdir_p(TAGS_DIR)
 
-# Collect categories and tags from all posts
-categories = []
-tags = []
-
-Dir["_posts/*.{md,markdown}"].each do |post_file|
-  content = File.read(post_file)
-
-  # Extract YAML front matter
-  if content =~ /^(---\s*\n.*?\n?)^(---\s*$\n?)/m
-    raw_frontmatter = $1
-
-    # Remove date/time keys before parsing
-    sanitized_frontmatter = raw_frontmatter.gsub(/^date:.*$/, '')
-
-    frontmatter = YAML.safe_load(sanitized_frontmatter, permitted_classes: [Date, Time], aliases: true) || {}
-
-    categories.concat(Array(frontmatter["categories"])) if frontmatter["categories"]
-    tags.concat(Array(frontmatter["tags"])) if frontmatter["tags"]
-  end
+# Helper: sanitize strings for filenames and URLs
+def slugify(text)
+  text.downcase.unicode_normalize(:nfkd).encode('ASCII', replace: '').gsub(/[^a-z0-9]+/, '-').gsub(/^-|-$/, '')
 end
 
-categories.uniq!
-tags.uniq!
+categories = Set.new
+tags = Set.new
 
-# Generate category pages
-categories.each do |cat|
-  slug = cat.downcase.strip.gsub(" ", "-")
-  filename = "#{categories_dir}/#{slug}.md"
-  File.open(filename, "w") do |f|
-    f.puts("---")
-    f.puts("layout: category")
-    f.puts("title: \"#{cat}\"")
-    f.puts("category: #{cat}")
-    f.puts("permalink: /categories/#{slug}/")
-    f.puts("---")
-  end
+# Collect categories and tags from posts
+Dir.glob("#{POSTS_DIR}/*.md") do |post|
+  front_matter = YAML.load_file(post)
+  next unless front_matter.is_a?(Hash)
+  categories.merge(front_matter["categories"] || [])
+  tags.merge(front_matter["tags"] || [])
 end
 
-# Generate tag pages
+# Generate markdown files for each category
+categories.each do |category|
+  slug = slugify(category)
+  path = File.join(CATEGORIES_DIR, "#{slug}.md")
+  File.write(path, <<~MD)
+    ---
+    layout: category
+    title: "#{category}"
+    permalink: /categories/#{slug}/
+    category: #{category}
+    ---
+  MD
+end
+
+# Generate markdown files for each tag
 tags.each do |tag|
-  slug = tag.downcase.strip.gsub(" ", "-")
-  filename = "#{tags_dir}/#{slug}.md"
-  File.open(filename, "w") do |f|
-    f.puts("---")
-    f.puts("layout: tag")
-    f.puts("title: \"#{tag}\"")
-    f.puts("tag: #{tag}")
-    f.puts("permalink: /tags/#{slug}/")
-    f.puts("---")
-  end
+  slug = slugify(tag)
+  path = File.join(TAGS_DIR, "#{slug}.md")
+  File.write(path, <<~MD)
+    ---
+    layout: tag
+    title: "#{tag}"
+    permalink: /tags/#{slug}/
+    tag: #{tag}
+    ---
+  MD
 end
 
-puts "✅ Generated #{categories.size} categories and #{tags.size} tags"
+puts "✅ Generated #{categories.size} categories and #{tags.size} tags."
