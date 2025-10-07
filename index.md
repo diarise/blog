@@ -30,14 +30,14 @@ title: "Blog"
     <div class="text-center mb-5" style="margin-top: 3rem!important;">
       <h2 class="mb-4 font-weight-bold">Explore More</h2>
   <p class="text-muted mb-4">Browse all our stories by category or tag and discover new destinations.</p>
-  <div class="btn-group">
+  <!-- <div class="btn-group">
     <a href="/categories/" class="btn btn-outline-primary btn-lg">
       <i class="fas fa-folder-open mr-2"></i> Categories
     </a>
     <a href="/tags/" class="btn btn-outline-secondary btn-lg">
       <i class="fas fa-tags mr-2"></i> Tags
     </a>
-  </div>
+  </div> -->
     </div>
 
     <div class="row">
