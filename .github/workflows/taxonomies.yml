@@ -19,7 +19,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          gem install yaml unicode_normalize
+          gem install yaml
 
       - name: Generate taxonomy pages
         run: ruby _scripts/generate_taxonomies.rb
@@ -30,4 +30,5 @@ jobs:
           git config user.email "actions@github.com"
           git add _tags _categories
           git diff --cached --quiet || git commit -m "Auto-generate categories and tags"
+          git pull --rebase origin main
           git push origin main
