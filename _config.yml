@@ -30,6 +30,16 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-archives
+  
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layout: archive
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
 
 defaults:
   - scope:
@@ -40,8 +50,8 @@ defaults:
       seo:
         type: "article"
 
-collections:
-  categories:
-    output: true
-  tags:
-    output: true
+# collections:
+#   categories:
+#     output: true
+#   tags:
+#     output: true
