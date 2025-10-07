@@ -71,6 +71,20 @@ The **Toadstool Café** inside Super Nintendo World remains a popular choice, bu
 
 ![](/assets/images/uploads/screenshot-2025-10-06-at-2.33.13 pm.png)
 
+## **Family Tips: Passes, Strollers & Rider Switch**
+
+**Express Pass or Not?**
+
+One of the biggest questions families have when planning a trip to Universal Studios Hollywood is whether the **Universal Express Pass** is worth it. This pass gives you **one-time express access to each ride, attraction, and seated show**, helping you skip most of the regular lines. On busy weekends or during peak seasons, it can be a game-changer — especially with kids who don’t enjoy waiting in long lines. If you’re visiting on a weekday during off-peak times, you may not need it for every ride, but it’s still a great option if you want to cover a lot in one day without feeling rushed.
+
+**Stroller-Friendly Tips**
+
+If you’re visiting with younger kids, bringing or renting a **stroller** is highly recommended. Universal Studios Hollywood involves **a lot of walking and hills**, especially when moving between the Upper and Lower Lots. There are designated stroller parking areas near most attractions, and the walkways are wide enough to navigate comfortably. A stroller also gives little ones a place to rest during the day, which can be a lifesaver by the afternoon. Just remember to label your stroller clearly, as many families park them in the same areas.
+
+**Rider Switch for Parents**
+
+Universal Studios Hollywood makes it easier for parents with little ones to still enjoy the thrill rides through their **Rider Switch** (also called Child Swap) program. If your child is too small or doesn’t want to ride, one parent can stay behind with the child while the other rides. When the first parent returns, the second parent can ride **without having to wait in the regular line all over again**. Each attraction has a designated Rider Switch area, usually near the loading zone. This system is a huge time-saver and allows both parents to experience the rides while keeping the day smooth for everyone — especially families with toddlers or younger kids.
+
 ## **What’s Coming Next**
 
 Universal is expanding with new attractions and dining options. **Fast & Furious: Hollywood Drift**, a high-speed spinning coaster, is expected to open in 2026, replacing the older *Fast & Furious: Supercharged* ride. New restaurants and cafes at CityWalk continue to improve convenience and variety for families and visitors.
