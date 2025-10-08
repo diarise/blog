@@ -119,14 +119,20 @@ layout: default
   }
 
   /* Links */
-  .post-content a {
-    color: #0077cc;
-    text-decoration: underline;
-    transition: color 0.2s ease;
-  }
-  .post-content a:hover {
-    color: #005999;
-  }
+.post-content a {
+  color: #0077cc;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  border: none !important; /* remove any border-bottoms */
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.post-content a:hover {
+  color: #005999;
+  text-decoration-color: #005999;
+}
 
   /* Lists */
   .post-content ul, .post-content ol {
