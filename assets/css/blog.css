@@ -395,3 +395,100 @@
   font-weight: 700;
   margin-bottom: 0.75rem;
 }
+
+/* ------------------------------
+   BLOG ARTICLE TEXT RESET
+   ------------------------------ */
+.post-content, 
+article, 
+.entry-content {
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #212529;
+  font-weight: 400;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Remove any pasted inline font, color, or size */
+.post-content * {
+  all: unset;
+  display: revert;
+  font-family: inherit !important;
+  color: inherit !important;
+  font-size: inherit !important;
+  line-height: inherit !important;
+  font-weight: inherit !important;
+  text-align: inherit !important;
+}
+
+/* Restore key elements after reset */
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6 {
+  all: revert;
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  color: #111;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.post-content h1 { font-size: 2rem; }
+.post-content h2 { font-size: 1.6rem; }
+.post-content h3 { font-size: 1.3rem; }
+
+.post-content p {
+  all: revert;
+  font-size: 1rem;
+  margin-bottom: 1.25rem;
+  color: #333;
+}
+
+.post-content strong { font-weight: 600; }
+.post-content em { font-style: italic; }
+.post-content a {
+  color: #0077cc;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+.post-content a:hover {
+  color: #005999;
+}
+
+.post-content ul, 
+.post-content ol {
+  all: revert;
+  margin: 1rem 0 1.5rem 1.5rem;
+}
+
+.post-content li {
+  margin-bottom: 0.5rem;
+}
+
+.post-content blockquote {
+  all: revert;
+  border-left: 4px solid #0077cc;
+  padding-left: 1rem;
+  font-style: italic;
+  color: #555;
+  margin: 1.5rem 0;
+}
+
+.post-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+}
+
+.post-content hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 2rem 0;
+}
