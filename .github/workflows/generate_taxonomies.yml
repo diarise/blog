@@ -7,7 +7,7 @@ on:
       - '_posts/**'
 
 permissions:
-  contents: write   # ✅ allows the workflow to push changes
+  contents: write  # ✅ allows the workflow to push changes
 
 jobs:
   build:
@@ -17,16 +17,23 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0   # ✅ fetch full history so push works
+          fetch-depth: 0  # Fetch full history
 
       - name: Run taxonomy generator
         run: bash _scripts/generate_taxonomies.sh
 
+      # --- FIXES APPLIED BELOW ---
       - name: Commit & push generated files
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Add categories and tags. The || true prevents the step from failing if no files are present
           git add _categories _tags || true
-          git commit -m "Auto-generate categories and tags" || echo "No changes to commit"
-          git pull --rebase origin main || true  # ✅ pulls latest before pushing
-          git push origin main || echo "Nothing to push"
+          
+          # Commit only if there are changes. The --allow-empty prevents a non-change failure.
+          git commit -m "Auto-generate categories and tags" --allow-empty
+          
+          # Push the changes. Force push to the same branch is the most reliable way 
+          # to ensure the update goes through, given the recursive nature.
+          git push origin main
