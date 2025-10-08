@@ -64,6 +64,95 @@ layout: default
             {{ content }}
           </div>
 
+          <style>
+            /* 🌍 BLOG TEXT RESET + STYLE */
+            .post-content, 
+            .post-content p,
+            .post-content li,
+            .post-content ul,
+            .post-content ol,
+            .post-content h1,
+            .post-content h2,
+            .post-content h3,
+            .post-content h4,
+            .post-content h5,
+            .post-content h6 {
+              all: revert;
+              font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+              color: #212529;
+              line-height: 1.75;
+              font-weight: 400;
+              word-wrap: break-word;
+            }
+
+            .post-content h1, .post-content h2, .post-content h3 {
+              font-family: "Playfair Display", serif;
+              font-weight: 700;
+              color: #111;
+              margin-top: 2rem;
+              margin-bottom: 1rem;
+              line-height: 1.3;
+            }
+
+            .post-content h1 { font-size: 2rem; }
+            .post-content h2 { font-size: 1.6rem; }
+            .post-content h3 { font-size: 1.3rem; }
+
+            .post-content p {
+              font-size: 1rem;
+              margin-bottom: 1.25rem;
+              color: #333;
+            }
+
+            .post-content strong { font-weight: 600; }
+            .post-content em { font-style: italic; }
+
+            .post-content a {
+              color: #0077cc;
+              text-decoration: underline;
+              transition: color 0.2s ease;
+            }
+            .post-content a:hover {
+              color: #005999;
+            }
+
+            .post-content ul, .post-content ol {
+              margin: 1rem 0 1.5rem 1.5rem;
+            }
+
+            .post-content li {
+              margin-bottom: 0.5rem;
+            }
+
+            .post-content blockquote {
+              border-left: 4px solid #0077cc;
+              padding-left: 1rem;
+              font-style: italic;
+              color: #555;
+              margin: 1.5rem 0;
+            }
+
+            .post-content img {
+              max-width: 100%;
+              height: auto;
+              border-radius: 8px;
+              margin: 1.5rem 0;
+            }
+
+            .post-content hr {
+              border: none;
+              border-top: 1px solid #ddd;
+              margin: 2rem 0;
+            }
+
+            @media (max-width: 768px) {
+              .post-content {
+                font-size: 0.95rem;
+                line-height: 1.7;
+              }
+            }
+          </style>
+
           <!-- 🔥 Tags Section -->
           {% if page.tags %}
             <div class="post-tags mb-4">
@@ -116,33 +205,8 @@ layout: default
 
           {% include newsletter.html %}
           {% include cta.html %}
-
-          <!-- 🔥 Travel Store Section -->
-          <div class="cta-box text-center my-5 p-5 rounded shadow-sm" 
-               style="background: linear-gradient(135deg, rgba(255,108,0,0.08), rgba(0,53,128,0.06));">
-
-            <h3 class="mb-3 font-weight-bold">Travel Essentials Store</h3>
-            <p class="mb-5">Explore our curated Amazon storefront for gear, books, and accessories — handpicked to make your journeys easier and more enjoyable.</p>
-
-            <!-- Product Grid -->
-            <div class="row">
-              {% for product in site.data.products.products limit:3 %}
-                <div class="col-md-6 mb-4">
-                  {% include product-card.html 
-                    title=product.title 
-                    image=product.image 
-                    link=product.link 
-                    description=product.description %}
-                </div>
-              {% endfor %}
-            </div>
-
-            <div class="text-center mt-4">
-              <a href="https://www.amazon.com/shop/voyagebyluna" target="_blank" rel="nofollow noopener sponsored" class="btn btn-lg btn-primary">
-                Visit Full Amazon Store →
-              </a>
-            </div>
-          </div>
+          {% include travelstore.html %}
+          
         </article>
       </div>
     </div>
