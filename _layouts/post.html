@@ -205,7 +205,32 @@ layout: default
 
           {% include newsletter.html %}
           {% include cta.html %}
-          
+          <!-- 🔥 Travel Store Section -->
+          <div class="cta-box text-center my-5 p-5 rounded shadow-sm" 
+               style="background: linear-gradient(135deg, rgba(255,108,0,0.08), rgba(0,53,128,0.06));">
+
+            <h3 class="mb-3 font-weight-bold">Travel Essentials Store</h3>
+            <p class="mb-5">Explore our curated Amazon storefront for gear, books, and accessories — handpicked to make your journeys easier and more enjoyable.</p>
+
+            <!-- Product Grid -->
+            <div class="row">
+              {% for product in site.data.products.products limit:3 %}
+                <div class="col-md-6 mb-4">
+                  {% include product-card.html 
+                    title=product.title 
+                    image=product.image 
+                    link=product.link 
+                    description=product.description %}
+                </div>
+              {% endfor %}
+            </div>
+
+            <div class="text-center mt-4">
+              <a href="https://www.amazon.com/shop/voyagebyluna" target="_blank" rel="nofollow noopener sponsored" class="btn btn-lg btn-primary">
+                Visit Full Amazon Store →
+              </a>
+            </div>
+          </div>
           
           
         </article>
