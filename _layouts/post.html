@@ -49,6 +49,18 @@ layout: default
             <img src="{{ page.image | relative_url }}" class="img-fluid rounded shadow-sm mb-4" alt="{{ page.title }}">
           {% endif %}
 
+          {% if page.video %}
+  <div class="video-wrapper mb-4">
+    <iframe 
+      src="https://www.youtube.com/embed/{{ page.video | replace: 'https://www.youtube.com/watch?v=', '' | replace: 'https://youtu.be/', '' }}" 
+      title="{{ page.title }}"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
+  </div>
+{% endif %}
+
           <!-- 🔥 Pinterest Save Button -->
           <div class="pinterest-wrapper text-right mb-3">
             <a href="https://pinterest.com/pin/create/button/?url={{ site.url }}{{ page.url }}&media={{ site.url }}{{ page.image }}&description={{ page.title | escape }}" 
