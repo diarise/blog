@@ -238,3 +238,17 @@ layout: default
     </div>
   </div>
 </section>
+<!-- 🌍 Force CMS links to open in a new tab -->
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Select all links inside post content
+    document.querySelectorAll(".post-content a").forEach(function(link) {
+      // Only apply to absolute URLs or external links
+      const isExternal = link.hostname !== window.location.hostname;
+      if (isExternal) {
+        link.setAttribute("target", "_blank");
+        link.setAttribute("rel", "noopener noreferrer");
+      }
+    });
+  });
+</script>
