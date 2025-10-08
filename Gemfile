@@ -11,4 +11,4 @@ gem "jekyll-feed"
 gem "minima", "~> 2.5"
 
 # Force Ruby version for GitHub Actions
-ruby "3.1.0"
+ruby ">= 3.1.0"
