@@ -1,0 +1,22 @@
+---
+layout: default
+title: "Browse by Category"
+---
+
+<section class="py-5">
+  <div class="container text-center">
+    <h1 class="mb-4">Browse by Category</h1>
+    <p class="text-muted mb-5">Explore our articles organized by theme.</p>
+
+    <div class="row justify-content-center">
+      {% for category in site.categories %}
+        {% assign cat_name = category[0] %}
+        <div class="col-6 col-md-3 mb-3">
+          <a href="{{ '/categories/' | append: cat_name | append: '/' | relative_url }}" class="btn btn-outline-primary w-100">
+            {{ cat_name | capitalize }}
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
