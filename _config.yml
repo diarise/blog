@@ -1,4 +1,4 @@
-title: "Voyage By Luna Blog"
+title: "Voyage By Luna Blog post"
 description: "Authentic travel stories, destination guides, and personal journeys around the world."
 
 
@@ -32,11 +32,11 @@ plugins:
   - jekyll-sitemap
 
 # ✅ Use collections for taxonomy auto-generation (Ruby workflow) 
-# collections:
-#   categories:
-#     output: true
-#   tags:
-#     output: true
+collections:
+  categories:
+    output: true
+  tags:
+    output: true
 
 defaults:
   - scope:
