@@ -1,0 +1,28 @@
+name: Deploy Jekyll Site
+
+on:
+  push:
+    branches: ["main"] # Change to your primary branch name if it's not 'main'
+
+jobs:
+  jekyll:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          # Fetch all history for use by jekyll-sitemap and jekyll-last-modified-at
+          fetch-depth: 0
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1' # Standard Jekyll compatibility
+          bundler-cache: true # Installs dependencies with Bundler
+
+      - name: Build and Deploy
+        uses: helaili/jekyll-action@v2
+        with:
+          # This action uses GitHub's pages gem to build the site, ensuring compatibility.
+          token: ${{ secrets.GITHUB_TOKEN }}
+          target_branch: gh-pages # Deploys to the gh-pages branch (standard for GitHub Pages)
