@@ -7,7 +7,6 @@ categories:
   - Japan
   - Tokyo
   - Kyoto
-  - ""
 tags:
   - Adventure
   - Travel
