@@ -18,16 +18,38 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Date", name: "date", widget: "datetime"}
-      - {label: "Categories", name: "categories", widget: "list"}
-      - {label: "Tags", name: "tags", widget: "list"}
-      - {label: "Featured image", name: "image", widget: "image"}
-      - {label: "Excerpt", name: "excerpt", widget: "text"}
-      - { label: "Video URL", name: "video", widget: "string", required: false }
-      - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Pinterest Link", name: "pinterest", widget: "string", required: false, hint: "Optional: Paste the Pinterest pin/board URL"}
+      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Categories", name: "categories", widget: "list" }
+      - { label: "Tags", name: "tags", widget: "list" }
+      - { label: "Featured image", name: "image", widget: "image" }
+      - { label: "Excerpt", name: "excerpt", widget: "text" }
+      - { label: "Pinterest Link", name: "pinterest", widget: "string", required: false, hint: "Optional: Paste the Pinterest pin/board URL" }
+
+      # 🧩 New Block-based Content System
+      - label: "Content Blocks"
+        name: "blocks"
+        widget: "list"
+        types:
+          - label: "Paragraph"
+            name: "paragraph"
+            widget: "object"
+            fields:
+              - { label: "Text", name: "text", widget: "markdown" }
+
+          - label: "Image"
+            name: "image_block"
+            widget: "object"
+            fields:
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Alt Text", name: "alt", widget: "string", required: false }
+
+          - label: "Video"
+            name: "video"
+            widget: "object"
+            fields:
+              - { label: "YouTube URL", name: "url", widget: "string", hint: "Paste a full YouTube or short youtu.be link" }
 
   - name: "products"
     label: "Travel Store Products"
@@ -40,7 +62,7 @@ collections:
             name: "products"
             widget: "list"
             fields:
-              - {label: "Title", name: "title", widget: "string"}
-              - {label: "Image", name: "image", widget: "image"}
-              - {label: "Link", name: "link", widget: "string"}
-              - {label: "Description", name: "description", widget: "text"}
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Link", name: "link", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
