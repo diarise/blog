@@ -10,10 +10,11 @@ tags:
   - Become a Travel Agent USA
   - Travel Business
   - Work From Home Travel
-image: /assets/images/uploads/borocay.jpeg
+image: /assets/images/uploads/create-an-image-of-a-lady-sitting-on-a-desk-working-as-a-travel-agent-at-home.jpg
 excerpt: Want to build a travel business from home in the US? This guide walks
   you through each step, from understanding the industry to partnering with a
   trusted host agency and launching your business the right way.
+video: https://www.youtube.com/watch?v=8za8jbHt8yo
 ---
 Starting a travel business from home is one of the most flexible and rewarding opportunities available today. Whether you want a side hustle or a full-time career, the travel industry in the US offers countless ways to earn income while helping others create unforgettable experiences.
 
@@ -32,7 +33,6 @@ Agents also gain access to exclusive rates, travel perks, and commissions from t
 There are two main ways to become a travel agent in the US:
 
 1. **Start your own agency independently.** This requires business registration, licensing, IATA or CLIA numbers, and establishing relationships with vendors.
-
 2. **Partner with a host agency.** This is the most common and beginner-friendly route. A host agency provides their accreditations, booking systems, training, and vendor access so you can focus on learning and growing your business.
 
 Starting with a host agency is often faster and more cost-effective, allowing you to plug into a system that’s already built.
@@ -48,13 +48,9 @@ Archer Travel, the host agency I work with, has been in business for over 75 yea
 Treat your new venture like a professional business from the start. You’ll need to:
 
 * Choose a business name
-
 * Open a business bank account
-
 * Create a simple website or landing page
-
 * Designate a small, organized workspace
-
 
 Laying this foundation will give your business structure, credibility, and room to grow.
 
@@ -69,13 +65,9 @@ One of the best perks of being a travel agent is enjoying discounted travel and 
 Marketing is how you build trust and attract clients. You don’t need to be a marketing expert, but you do need consistency. Here are effective ways to start:
 
 * Share travel tips and insights on social media
-
 * Create destination guides or themed Pinterest boards
-
 * Build an email list to share offers and updates
-
 * Produce short videos or live sessions to showcase your expertise
-
 
 Position yourself as a trusted advisor. People book with people they trust, not just websites.
 
