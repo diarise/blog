@@ -21,10 +21,6 @@ The air was thick with salt as I approached \*\*Cape Coast Castle\*\*, perched a
 
 I joined a small group tour led by a local guide, his voice soft but steady as he spoke of the castle’s role in the transatlantic slave trade. We descended into the dungeons, where the air grew damp and suffocating. The walls, etched with centuries of silence, seemed to breathe with the memory of those who had once been confined there. I touched the stone, cold and unyielding, and for a moment it felt as if the past pressed back against my hand.
 
-```
-<iframe width="560" height="315" src="https://www.youtube.com/embed/NfLUotwpY2w?si=oaCs8jdE2tp39SLC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-```
-
 Above, life moved on — sunlight filtered through narrow windows, and footsteps echoed in the courtyard. The guide explained how thousands passed through these doors, shipped across oceans to lives of unimaginable hardship. Standing in the “Door of No Return,” I felt a chill. The ocean glistened just beyond, but for those forced through this passage, it had meant only separation and despair.
 
 Yet, amid the heaviness, there was also resilience. Our guide reminded us that today, Cape Coast Castle is not only a memorial of suffering but also a symbol of survival and reconnection. Visitors from around the world — especially descendants of the African diaspora — come here to honor, to remember, and to reclaim. The energy of remembrance hung in the air, but so did a quiet strength.
