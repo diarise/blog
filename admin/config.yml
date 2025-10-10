@@ -25,6 +25,8 @@ collections:
       - { label: "Tags", name: "tags", widget: "list" }
       - { label: "Featured image", name: "image", widget: "image" }
       - { label: "Excerpt", name: "excerpt", widget: "text" }
+      - { label: "Video URL (optional)", name: "video", widget: "string", required: false, hint: "Paste a YouTube link (e.g. https://youtu.be/xyz123)" }
+      - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Pinterest Link", name: "pinterest", widget: "string", required: false, hint: "Optional: Paste the Pinterest pin/board URL" }
 
       # 🧩 New Block-based Content System
