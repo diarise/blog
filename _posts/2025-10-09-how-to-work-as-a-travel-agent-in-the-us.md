@@ -41,7 +41,7 @@ Starting with a host agency is often faster and more cost-effective, allowing yo
 
 While you don’t need a travel degree, you do need the right structure and support. Partnering with a trusted host agency gives you everything you need to operate legally and professionally.
 
-Archer Travel, the host agency I work with, has been in business for over 75 years. They provide full licensing, industry credentials, access to top vendors, and comprehensive training. This allows new agents to get started with confidence and begin earning commissions without navigating the complexities of building an agency alone.
+Archer Travel, the host agency I work with, has been in business for over 72 years. They provide full licensing, industry credentials, access to top vendors, and comprehensive training. This allows new agents to get started with confidence and begin earning commissions without navigating the complexities of building an agency alone.
 
 ### **Step 3: Set Up Your Home Business**
 
