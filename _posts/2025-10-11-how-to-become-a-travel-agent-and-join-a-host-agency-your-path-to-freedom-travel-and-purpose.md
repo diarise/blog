@@ -2,7 +2,7 @@
 layout: post
 title: "How to Become a Travel Agent and Join a Host Agency: Your Path to
   Freedom, Travel, and Purpose"
-date: 2025-10-11T10:52:00.000-07:00
+date: 2025-10-13T07:52:00.000-04:00
 categories:
   - Business
   - Travel Industry
@@ -18,7 +18,7 @@ excerpt: >
   others see the world?
 blocks:
   - type: video
-    url: https://www.youtube.com/watch?v=8za8jbHt8yo
+    url: https://www.youtube.com/watch?v=DYx-zW4pslo
   - type: paragraph
     text: >-
       ### **2. Complete the Onboarding & Training**
