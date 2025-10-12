@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Become a Travel Agent from Home in the UK (Step-by-Step Guide)
-date: 2025-10-12T16:31:00.000-04:00
+date: 2025-10-12T16:50:00.000-04:00
 categories:
   - Business
   - Travel Industry
