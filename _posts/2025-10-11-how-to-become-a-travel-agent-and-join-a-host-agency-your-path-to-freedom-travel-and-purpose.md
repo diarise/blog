@@ -2,7 +2,7 @@
 layout: post
 title: "How to Become a Travel Agent and Join a Host Agency: Your Path to
   Freedom, Travel, and Purpose"
-date: 2025-10-13T07:52:00.000-04:00
+date: 2025-10-14T09:52:00.000-04:00
 categories:
   - Business
   - Travel Industry
