@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to work as a Travel Agent  in the US
+title: How to work as a Travel Agent in the US
 date: 2025-10-10T11:46:00.000-07:00
 categories:
   - Business
