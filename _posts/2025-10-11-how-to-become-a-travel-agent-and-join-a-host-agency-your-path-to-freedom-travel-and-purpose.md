@@ -11,7 +11,7 @@ tags:
   - Become a Travel Agent USA
   - Travel Business
   - Work From Home Travel
-image: /assets/images/uploads/how-to-become-a-travel-agent-from-home-step-by-step-guide-.png
+image: /assets/images/uploads/how-to-become-a-travel-agent-from-home-step-by-step-guide-1274-x-1050-px-.png
 excerpt: >
   Have you ever dreamed of turning your love for travel into a real business —
   one that lets you work from anywhere, create your own schedule, and help
