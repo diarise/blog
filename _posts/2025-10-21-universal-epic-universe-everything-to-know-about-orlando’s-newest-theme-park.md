@@ -35,21 +35,17 @@ blocks:
 
       1. **Celestial Park** – A lush, open hub connecting all worlds. Expect fountains, gardens, and family-friendly attractions that blend nature and technology.
 
-
       2. **The Wizarding World of Harry Potter – Ministry of Magic** – A new chapter in the beloved Harry Potter saga, where guests can explore both 1920s Paris and the British Ministry of Magic.
-
 
       3. **SUPER NINTENDO WORLD™** – Step into your favorite Nintendo games, complete with interactive rides and adventures alongside Mario, Luigi, and Princess Peach.
 
-
       4. **How to Train Your Dragon – Isle of Berk** – A breathtaking land inspired by DreamWorks’ hit film, filled with dragons, Viking villages, and family-friendly fun.
-
 
 
       **Dark Universe** – A mysterious realm where classic movie monsters like Dracula and Frankenstein come alive in a thrilling, modern way.
 
 
-      ![](/assets/images/uploads/24-uor-3517102-ous24-uorsocialmediatoolkit-resorts-07_106_1080-x-1080.jpg)
+      ![](/assets/images/uploads/cp_sc_l002_c0095_250407_48l914_040725_r2.jpg)
   - type: paragraph
     text: >-
       Anchoring the park is the brand-new **Universal Helios Grand Hotel**, a
