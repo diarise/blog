@@ -86,6 +86,6 @@ blocks:
       Bora Bora is more than just a destination — it’s a feeling. From the moment you arrive, the pace of life slows, the water sparkles brighter, and every sunset feels cinematic. Whether it’s a romantic escape or a once-in-a-lifetime adventure, Bora Bora will remind you that paradise is real.
 
 
-      Ready to plan your escape to Bora Bora?[ Schedule a meeting](https://voyagebyluna.com/contact) to start designing your dream island getaway.
+      Ready to plan your escape to Bora Bora? Get a [free quote here](https://forms.gle/ZBeponc75D1hfRBN7) [](https://voyagebyluna.com/contact)to start designing your dream island getaway.
 ---
 a
