@@ -28,10 +28,10 @@ blocks:
       ### **1. Time Saved, Stress Reduced**
 
 
-      Planning a trip involves dozens of decisions: flights, accommodation, transfers, visas, travel insurance, activities, and more. A travel advisor knows the industry inside out and can manage all of those details for you. They handle logistics, check for hidden fees, and create an itinerary suited to your style.[ ASTA+1](https://www.asta.org/travelerServices/why-use-a-travel-agent-advisor?utm_source=chatgpt.com)
+      Planning a trip involves dozens of decisions: flights, accommodation, transfers, visas, travel insurance, activities, and more. A travel advisor knows the industry inside out and can manage all of those details for you. They handle logistics, check for hidden fees, and create an itinerary suited to your style.[](https://www.asta.org/travelerServices/why-use-a-travel-agent-advisor?utm_source=chatgpt.com)
 
 
-      When things change—say a flight is cancelled or a hotel closes unexpectedly—a travel agent has your back. You don’t waste hours trying to fix things yourself. You have someone doing that work for you.[ TravelPerks+1](https://travelperks.com/blog/key-benefits-of-using-a-travel-agent?utm_source=chatgpt.com)
+      When things change—say a flight is cancelled or a hotel closes unexpectedly—a travel agent has your back. You don’t waste hours trying to fix things yourself. You have someone doing that work for you.[](https://travelperks.com/blog/key-benefits-of-using-a-travel-agent?utm_source=chatgpt.com)
 
 
       ### **2. Access to Exclusive Deals & Perks**
@@ -85,11 +85,11 @@ blocks:
       ### **How to Choose the Right Travel Agent**
 
 
-      * Look for accreditation (for example, via American Society of Travel Advisors) or membership in recognised travel organisations.[ Wikipedia+1](https://en.wikipedia.org/wiki/American_Society_of_Travel_Advisors?utm_source=chatgpt.com)
+      * Look for accreditation (for example, via American Society of Travel Advisors) or membership in recognised travel organisations.[](https://en.wikipedia.org/wiki/American_Society_of_Travel_Advisors?utm_source=chatgpt.com)
 
       * Check reviews and ask for past trip examples.
 
-      * Clarify what their service fee or commission model is up front.[ Capital One](https://www.capitalone.com/learn-grow/more-than-money/are-travel-agents-worth-it/?utm_source=chatgpt.com)
+      * Clarify what their service fee or commission model is up front.[](https://www.capitalone.com/learn-grow/more-than-money/are-travel-agents-worth-it/?utm_source=chatgpt.com)
 
       * Make sure they specialise in the type of travel you want (e.g., family holidays, cruises, luxury escapes).
 
