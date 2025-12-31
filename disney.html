@@ -1,0 +1,29 @@
+---
+layout: default
+title: "Disney Travel"
+permalink: /disney/
+---
+
+<section class="py-5">
+  <div class="container">
+    <h1 class="text-center mb-4">Plan Your Disney Vacation</h1>
+
+    <div class="disney-iframe-wrapper">
+      <iframe
+        id="disney-iframe"
+        src="https://www.disneytravelcenter.com/ecc98b0fa6/"
+        style="width:100%; border:none;"
+        loading="lazy">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<script>
+  window.addEventListener("message", function (e) {
+    if (e.data && e.data.frameHeight) {
+      document.getElementById("disney-iframe").style.height =
+        (e.data.frameHeight + 30) + "px";
+    }
+  });
+</script>
