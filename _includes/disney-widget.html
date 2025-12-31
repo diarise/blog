@@ -1,0 +1,15 @@
+<iframe
+  id="disney-iframe"
+  src="https://www.disneytravelcenter.com/ec9586f51f/"
+  style="width:100%; border:none;"
+  loading="lazy">
+</iframe>
+
+<script>
+  window.addEventListener("message", function (e) {
+    if (e.data && e.data.frameHeight) {
+      document.getElementById("disney-iframe").style.height =
+        (e.data.frameHeight + 30) + "px";
+    }
+  });
+</script>
