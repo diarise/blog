@@ -522,11 +522,15 @@ article,
   transform: scale(1.01);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
-.disney-iframe-wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
+/* Disney iframe page fix */
+#disney-iframe {
+  display: block;
+  width: 100%;
+  min-height: 700px;
 }
 
-#disney-iframe {
-  min-height: 600px;
+/* Prevent Bootstrap from breaking Disney layout */
+.page-disney .container,
+.page-disney .container-fluid {
+  max-width: 100% !important;
 }
